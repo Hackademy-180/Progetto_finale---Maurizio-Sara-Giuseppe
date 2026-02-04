@@ -43,10 +43,12 @@
             </ul>    
         </div>
         <div>
-            <button class="button">
-               
-                <span class="lable">inserisci annuncio</span>
-            </button>
+            <a href="{{route("create_article")}}">
+                <button class="button">
+                
+                    <span class="lable">inserisci annuncio</span>
+                </button>
+            </a>
             </div>
         </div>
     </nav>
