@@ -14,7 +14,8 @@ class ArticleForm extends Component
     public $category;
     public $article;
 
-    public function save(){
+    public function save()
+    {
         $this->article = Article::create([
             'title' => $this->title,
             'description' => $this->description,
@@ -22,6 +23,8 @@ class ArticleForm extends Component
             'category_id' => $this->category,
             'user_id' => Auth::id(),
         ]);
+        $this->reset();
+        return redirect(route('create_article'))->with('status', 'Annuncio creato con successo');
     }
 
     public function render()
