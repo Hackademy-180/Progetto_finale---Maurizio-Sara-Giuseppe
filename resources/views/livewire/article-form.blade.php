@@ -1,5 +1,5 @@
 <div>
-    <form wire:submit="save" class="bg-body-tertiary shadow rounded p-5 my-5">
+    <form wire:submit="save" class="bg-body-tertiary shadow rounded pt-3 px-5 pb-3">
         @csrf
         <div class="mb-3">
             <label for="title" class="form-label">Titolo</label>
