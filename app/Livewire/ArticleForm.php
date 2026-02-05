@@ -9,14 +9,18 @@ use Livewire\Component;
 
 class ArticleForm extends Component
 {
-    #[Validate('required|min:5', message:["required"=>"Il titolo è obbligatorio", "min"=>"il titolo deve avere minimo 5 caratteri"])]
+    #[Validate('required|min:5')]
     public $title;
-    #[Validate('required|min:10')]
+
+    #[Validate('required|min:10|max:200')]
     public $description;
+
     #[Validate('required|numeric')]
     public $price;
-    public $category;
+
     #[Validate('required')]
+    public $category;
+
     public $article;
 
     public function save()
@@ -38,15 +42,18 @@ class ArticleForm extends Component
         return view('livewire.article-form');
     }
 
-    // protected function messages(){
-    //     return [
-    //         'title.required' => 'Inserire un titolo.',
-    //         'title.min' => 'Il titolo deve avere almeno 5 caratteri',
-    //         'description.required' => 'Inserire una descrizione',
-    //         'description.min' => 'La descrizione deve avere almeno 10 caratteri',
-    //         'price.required' => 'Inserire un prezzo',
-    //         'price.numeric' => 'Inserire un numero',
-    //         'category.required' => 'Selezionare una categoria',
-    //     ];
-    // }
+    protected $messages = [
+
+        'title.required' => 'Inserire un titolo!',
+        'title.min' => 'Inserire almeno 5 caratteri per il titolo articolo.',
+
+        'description.required' => 'Inserire una descrizione!',
+        'description.min' => 'Inserire almeno 10 caratteri.',
+        'description.max' => 'Inserire massimo 200 caratteri.',
+
+        'price.required' => 'Inserire prezzo!',
+        'price.numeric' => 'Inserire prezzo articolo in cifre.',
+
+        'category.required' => 'Inserire una categoria!',
+    ];
 }
