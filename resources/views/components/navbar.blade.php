@@ -10,7 +10,7 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Annunci</a>
+                    <a class="nav-link" href="{{route("index_article")}}">Annunci</a>
                 </li>
                 
                 
@@ -43,12 +43,13 @@
             </ul>    
         </div>
         <div>
+            @auth
             <a href="{{route("create_article")}}">
                 <button class="button">
-                
                     <span class="lable">inserisci annuncio</span>
                 </button>
             </a>
+            @endauth
             </div>
         </div>
     </nav>
