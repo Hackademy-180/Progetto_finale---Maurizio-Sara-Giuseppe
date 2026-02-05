@@ -1,5 +1,5 @@
 <x-layout>
-    <main class="container mt-5">
+    <header class="container mt-5">
         <section class="row">
             <article class="col-12">
                 <form class="d-flex" role="search">
@@ -8,10 +8,19 @@
                 </form>
             </article>
         </section>
-    </main>
-    <h2>articoli piu visti</h2>
-    <section class="container mt-5">
+    </header>
+    <main class="container mt-4">
         <section class="row">
+            @foreach ($articles as $article)
+            <article class="col-12 col-md-3 my-2">
+               <x-card :article="$article" />     
+            </article>
+                @endforeach
+        </section>
+    </main>
+    <section class="container mt-5">
+        <section class="row text-center">
+            <h2>Articoli piu visti</h2>
             <article class="col-12">
                 <div id="carouselExample" class="carousel slide">
                     <div class="carousel-inner">
@@ -51,9 +60,9 @@
             </article>
         </section>
     </section>
-    <h2>Potrebbe piacerti</h2>
     <section class="container mt-5">
-        <section class="row">
+        <section class="row text-center">
+            <h2>Potrebbe piacerti</h2>
             <article class="col-12">
                 <div id="carouselExample" class="carousel slide">
                     <div class="carousel-inner">
