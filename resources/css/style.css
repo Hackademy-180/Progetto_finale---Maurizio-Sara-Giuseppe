@@ -149,3 +149,9 @@ body-card {
     color: #fff;
     background: #5372f0;
 }
+
+/* Card homepage */
+
+.card-custom{
+    height: 450px;
+}

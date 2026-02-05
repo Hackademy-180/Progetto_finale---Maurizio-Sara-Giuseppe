@@ -12,7 +12,7 @@
         </div>
         <div class="mb-3">
             <label for="price" class="form-label">Prezzo</label>
-            <input type="text" class="form-control @error('price') is-invalid @enderror" wire:model.blur="price" id="price">
+            <input type="number" class="form-control @error('price') is-invalid @enderror" wire:model.blur="price" id="price">
         </div>
         <div class="mb-3">
             <select wire:model.blur="category" class="form-control @error('category') is-invalid @enderror">
