@@ -10,15 +10,6 @@
     </section>
   </header>
   
-  <main class="container mt-4">
-    <section class="row">
-      @foreach ($articles as $article)
-      <article class="col-12 col-md-3 my-2">
-        <x-card :article="$article" />     
-      </article>
-      @endforeach
-    </section>
-  </main>
   <section class="container mt-5">
     <section class="row text-center">
       <h2>Articoli piu visti</h2>
@@ -33,7 +24,7 @@
       >
       @foreach ($articles as $article)
       <swiper-slide>
-        <article class="my-2">
+        <article class="col-12 col-md-3 my-2">
           <x-card :article="$article" />
         </article>
       </swiper-slide>
@@ -53,6 +44,15 @@
       
       const swiperEl = document.querySelector('swiper-container')
       
+      <p class="append-buttons">
+        <a href="#" class="prepend-2-slides">Prepend 2 Slides</a>
+        <a href="#" class="slide-1">Slide 1</a>
+        <a href="#" class="slide-250">Slide 250</a>
+        <a href="#" class="slide-500">Slide 500</a>
+        <a href="#" class="append-slide">Append Slide</a>
+      </p>
+
+
       Object.assign(swiperEl, {
         slidesPerView: 3,
         centeredSlides: true,
