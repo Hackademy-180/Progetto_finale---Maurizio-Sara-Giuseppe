@@ -1,3 +1,8 @@
+:route {
+    --crema: 188, 75, 81;
+}
+
+
 /* bottone navbar esterno */
 .button {
     display: flex;
@@ -152,9 +157,6 @@ body-card {
 
 /* Card homepage */
 
-.card-custom{
+.card-custom {
     height: 450px;
 }
-
-
-
