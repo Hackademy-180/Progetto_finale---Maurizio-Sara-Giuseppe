@@ -46,6 +46,42 @@
 
 /* Immagini carosell */
 
+.img-custom{
+    width: 400px;
+}
+/* 
+
+
+/* Card homepage */
+
+.card-custom {
+    height: 450px;
+}
+
+/* navbar */
+.nav-personale{
+    height: 85px;
+    width: 100%;
+    background-color: var(--bianco);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+
+
+
+.nav-personale2{
+    background-color: rgb(0, 0, 0);
+}
+
+.elementiNav{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/* Immagini carosell */
+
 /* .img-custom{
     height: 200px;
     width: 200px;
@@ -153,10 +189,4 @@ body-card {
 .card-list .card-link .card-button {
     color: #fff;
     background: #5372f0;
-}
-
-/* Card homepage */
-
-.card-custom {
-    height: 450px;
 }

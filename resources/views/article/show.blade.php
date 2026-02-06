@@ -2,16 +2,19 @@
     <h1 class="lead display-2 text-center">Dettaglio annuncio</h1>
     <main class="container">
         <section class="row justify-content-center py-5">
-            <div class="col-12 col-md-6 mb-3">
-                <div id="carouselExample" class="carousel slide">
-                    <div class="carousel-inner carousel-custom">
-                        <div class="carousel-item active">
+            <div class="col-12 col-md-6 mb-3 carousel-custom">
+                <div id="carouselExample" class="carousel slide carousel-custom">
+                    <div class="carousel-inner">
+                        <div class="card-custom carousel-item active">
                             <img class="img-custom" src="https://picsum.photos/400" class="d-block w-100 rounded shadow" alt="...">
                         </div>
-                        <div class="carousel-item">
+                        <div class="card-custom carousel-item active">
                             <img class="img-custom" src="https://picsum.photos/400" class="d-block w-100 rounded shadow" alt="...">
                         </div>
-                        <div class="carousel-item">
+                        <div class="card-custom carousel-item">
+                            <img class="img-custom" src="https://picsum.photos/400" class="d-block w-100 rounded shadow" alt="...">
+                        </div>
+                        <div class="card-custom carousel-item">
                             <img class="img-custom" src="https://picsum.photos/400" class="d-block w-100 rounded shadow" alt="...">
                         </div>
                     </div>
@@ -24,7 +27,7 @@
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
-
+                
             </div>
             
             <article class="col-12 text-center">
