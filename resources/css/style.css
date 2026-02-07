@@ -1,10 +1,75 @@
-:route {
-    --crema: 188, 75, 81;
+:root{
+    --mattone:rgb(188, 75, 81);
+    --panna:rgb(242, 232, 207);
+    --nero:rgb(0, 0, 0);
+    --bianco:rgb(255, 255, 255);
+}
+
+.nav-custom {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+    height: 85px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+
+.nav-elements{
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 
-/* bottone navbar esterno */
-.button {
+/* INIZIO barra di ricerca iportata */
+        .group {
+        display: flex;
+        line-height: 28px;
+        align-items: center;
+        position: relative;
+        max-width: 190px;
+        }
+
+        .input {
+        width: 210px;
+        height: 30px;
+        line-height: 28px;
+        padding: 0 1rem;
+        padding-left: 2.5rem;
+        border: 1px solid transparent;
+        border-radius: 20px;
+        outline: none;
+        background-color: rgba(148, 148, 148, 0.568);
+        color: #f74e4e;
+        transition: 0.3s ease;
+        }
+
+        .input::placeholder {
+        color: #000000;
+        }
+
+        .input:focus,
+        input:hover {
+        outline: none;
+        border-color: rgba(0, 0, 0, 0.411);
+        background-color: #fff;
+        box-shadow: 0 0 0 4px rgba(73, 0, 0, 0.178);
+        }
+
+        .icon {
+        position: absolute;
+        left: 1rem;
+        fill: #000000;
+        width: 1rem;
+        height: 1rem;
+        }
+/* FINE barra di ricerca iportata */
+
+
+ /* bottone navbar esterno */
+/* .button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +78,7 @@
     height: 40px;
     width: 201px;
     border: none;
-    background: #FF342B;
+    background: var(--mattone);
     border-radius: 20px;
     cursor: pointer;
 }
@@ -21,19 +86,19 @@
 .lable {
     line-height: 22px;
     font-size: 17px;
-    color: #fff;
+    color:var(--mattone);
     font-family: sans-serif;
     letter-spacing: 1px;
 }
 
 .button:hover {
-    background: #e52e26;
+    background: var(--mattone);
 }
 
 .button:hover .svg-icon {
     animation: slope 1s linear infinite;
-}
-
+}  */
+/* 
 @keyframes slope {
     0% {}
 
@@ -42,7 +107,7 @@
     }
 
     100% {}
-}
+} */
 
 /* Immagini carosell */
 
@@ -58,135 +123,115 @@
     height: 450px;
 }
 
-/* navbar */
-.nav-personale{
-    height: 85px;
-    width: 100%;
-    background-color: var(--bianco);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: fixed;
-    top: 0;
-    z-index: 99;
-}
 
+/* Carosell */
 
+        /* .img-custom{
+            height: 200px;
+            width: 200px;
+        }
 
-.nav-personale2{
-    background-color: rgb(0, 0, 0);
-}
+        .carousel-custom{
+            width: 200px;
+        } */
 
-.elementiNav{
-    margin-left: 10px;
-    margin-right: 10px;
-}
-/* Immagini carosell */
+        /* * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } */
 
-/* .img-custom{
-    height: 200px;
-    width: 200px;
-}
+        body-card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: linear-gradient(rgb(236, 239, 254), rgb(206, 214, 251));
+        }
 
-.carousel-custom{
-    width: 200px;
-} */
+        .card-list .card-item {
+            list-style: none;
+        }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+        .card-list .card-item .card-link {
+            user-select: 400px;
+            display: block;
+            background: rgba(240, 240, 240, 0.65);
+            padding: 18px;
+            border-radius: 12px;
+            text-decoration: none;
+            border: 2px solid transparent;
+            box-shadow: 0 10px 10 px rgb(0, 0, 0, 0.05);
+            transition: 0.2s ease;
+        }
 
-}
+        .card-list .card-item .card-link:hover {
+            border-color: #5372f0;
+        }
 
-body-card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background: linear-gradient(rgb(236, 239, 254), rgb(206, 214, 251));
-}
+        .card-list .card-link .card-image {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            border-radius: 10px;
 
-.card-list .card-item {
-    list-style: none;
-}
+        }
 
-.card-list .card-item .card-link {
-    user-select: 400px;
-    display: block;
-    background: rgba(240, 240, 240, 0.65);
-    padding: 18px;
-    border-radius: 12px;
-    text-decoration: none;
-    border: 2px solid transparent;
-    box-shadow: 0 10px 10 px rgb(0, 0, 0, 0.05);
-    transition: 0.2s ease;
-}
+        .card-list .card-link .badge {
+            color: #3538ee;
+            padding: 8px 16px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            margin: 16px 0 18px;
+            background: #dde4ff;
+            width: fit-content;
+            border-radius: 50px;
+        }
 
-.card-list .card-item .card-link:hover {
-    border-color: #5372f0;
-}
+        .card-list .card-link .badge.articoliperlacasa {
+            color: rgb(rgb(0, 128, 0));
+            background-color: rgb(rgb(120, 143, 120));
+        }
 
-.card-list .card-link .card-image {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-    border-radius: 10px;
+        .card-list .card-link .badge.Elettronica {
+            color: rgb(rgb(0, 0, 255));
+            background-color: rgb(rgb(192, 192, 255));
+        }
 
-}
+        .card-list .card-link .badge.videogiochi {
+            color: rgb(rgb(255, 0, 0));
+            background-color: rgb(rgb(255, 199, 199));
+        }
 
-.card-list .card-link .badge {
-    color: #3538ee;
-    padding: 8px 16px;
-    font-size: 0.95rem;
-    font-weight: 500;
-    margin: 16px 0 18px;
-    background: #dde4ff;
-    width: fit-content;
-    border-radius: 50px;
-}
+        .card-list .card-link .badge.libri {
+            color: rgb(rgb(255, 234, 0));
+            background-color: rgb(252, 245, 170);
+        }
 
-.card-list .card-link .badge.articoliperlacasa {
-    color: rgb(rgb(0, 128, 0));
-    background-color: rgb(rgb(120, 143, 120));
-}
+        .card-list .card-link .card-title {
+            font-size: 1.19rem;
+            color: rgb(0, 0, 0);
+            font-weight: 600;
 
-.card-list .card-link .badge.Elettronica {
-    color: rgb(rgb(0, 0, 255));
-    background-color: rgb(rgb(192, 192, 255));
-}
+        }
 
-.card-list .card-link .badge.videogiochi {
-    color: rgb(rgb(255, 0, 0));
-    background-color: rgb(rgb(255, 199, 199));
-}
+        .card-list .card-link .card-button {
+            height: 35px;
+            width: 35px;
+            color: #5372f0;
+            border-radius: 50%;
+            margin: 30px 0 5px;
+            background: none;
+            cursor: pointer;
+            border: 2px solid #5372f0;
+            transform: rotate(-45deg);
+            transition: 0.4s ease;
 
-.card-list .card-link .badge.libri {
-    color: rgb(rgb(255, 234, 0));
-    background-color: rgb(252, 245, 170);
-}
+        }
 
-.card-list .card-link .card-title {
-    font-size: 1.19rem;
-    color: rgb(0, 0, 0);
-    font-weight: 600;
+        .card-list .card-link .card-button {
+            color: #fff;
+            background: #5372f0;
+        }
 
-}
-
-.card-list .card-link .card-button {
-    height: 35px;
-    width: 35px;
-    color: #5372f0;
-    border-radius: 50%;
-    margin: 30px 0 5px;
-    background: none;
-    cursor: pointer;
-    border: 2px solid #5372f0;
-    transform: rotate(-45deg);
-    transition: 0.4s ease;
-
-}
-
-.card-list .card-link .card-button {
-    color: #fff;
-    background: #5372f0;
-}
+/* fine Carosell */

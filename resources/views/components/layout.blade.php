@@ -8,13 +8,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <title>Document</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-   
+
 </head>
-<body>
-    <x-navbar></x-navbar>
-{{$slot}}
 
+    <body>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-</body>
+        <x-navbar></x-navbar>
+        
+        {{$slot}}
+
+        <x-footer/>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    </body>
 </html>
