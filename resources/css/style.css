@@ -5,9 +5,12 @@
     --bianco:rgb(255, 255, 255);
 }
 
+body{
+    margin-top: 100px;
+}
 .nav-custom {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
-    height: 85px;
+    height: 80px;
     width: 100%;
     background-color: rgb(255, 255, 255);
     background-repeat: no-repeat;
@@ -18,10 +21,23 @@
 }
 
 .nav-elements{
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
+.sention-icon{
+    margin-left: 10%;
+}
+.nav-icon{
+    
+    width: 48px;
+    font-size: 21px;
+}
+
+.logo-navbar{
+    width: 50px;
+    margin-left: 30%;
+}
 
 /* INIZIO barra di ricerca iportata */
         .group {
