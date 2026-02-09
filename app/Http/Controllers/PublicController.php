@@ -10,5 +10,12 @@ class PublicController extends Controller
     public function home() {
     $articles = Article::take(4)->orderBy('created_at', 'desc')->get();
     return view('welcome', compact('articles'));
-}
+    }
+
+    public function searchArticles(Request $request){
+        
+        $query = $request->input('query');
+        $articles = Article::search($query)->paginate(10);
+        return view('article.searched', ['articles' => $articles, 'query' => $query]);
+    }
 }

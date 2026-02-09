@@ -86,8 +86,20 @@
                             
                  </ul>
                     
+
+                {{-- BARRA DI RICEERCA USER STORY #10 --}}
+                 <form class="d-flex ms-auto" role="search" action="{{route('article.search')}}" method="GET">
+                    <div class="input-group">
+                        <input type="search" name="query" class="form-control" placeholder="Cerca" aria-label="search">
+                        <button type="submit" class="input-group-text btn btn-outline-success" id="basic-addon2">
+                            Cerca
+                        </button>
+                    </div>
+                 </form>
+                {{-- BARRA DI RICEERCA USER STORY #10 --}}
+
                 <!-- INIZIO BARRA DI RICERCA IMPORTATA OPENSOURCE -->
-                <div class="nav-item group ms-3">
+                {{-- <div class="nav-item group ms-3">
                     <svg viewBox="0 0 24 24" aria-hidden="true" class="icon">
                         <g>
                             <path
@@ -95,13 +107,13 @@
                             ></path>
                         </g>
                     </svg>
-                    <input class="input" type="search" placeholder="cerca" />
+                    <input class="input" type="search" placeholder="cerca" /> --}}
 
                     <!-- FINE BARRA DI RICERCA IMPORTATA OPENSOURCE -->
                 
                 
                     <!-- icone -->
-                    <div class="nav-item d-flex justify-content-evenly text-center sention-icon">
+                    {{-- <div class="nav-item d-flex justify-content-evenly text-center sention-icon">
                         <a class="nav-link nav-icon me-auto text-start" href="#">
                             <i class=" fa-regular fa-user "></i>
                         </a>
@@ -110,7 +122,7 @@
                         </a>
                         <a class="nav-item nav-link nav-icon ms-auto text-end" href="#">
                             <i class=" fa-solid fa-bag-shopping"></i>
-                        </a>
+                        </a> --}}
                     </div>
                 </div>
             </div>

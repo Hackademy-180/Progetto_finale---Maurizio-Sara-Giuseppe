@@ -12,5 +12,7 @@ Route::get('/article/index', [ArticleController::class, 'index'])->name('index_a
 Route::get('/article/show/{article}', [ArticleController::class, 'show'])->name('show_article');
 // categorie articoli
 Route::get('/category/{category}', [ArticleController::class, 'byCategory'])->name('byCategory');
+// Ricefca articoli
+Route::get('/search/article', [PublicController::class, 'searchArticles'])->name('article.search');
 
 
