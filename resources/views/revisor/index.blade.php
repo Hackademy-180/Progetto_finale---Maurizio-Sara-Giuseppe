@@ -11,7 +11,7 @@
             <div class="col-3">
                 <div class="rounded shadow bg-body-secondary">
                     <h1 class="display-5 text-center pb-2">
-                        Revisor dashboard
+                        Dashboard per revisori
                     </h1>
                 </div>
             </div>

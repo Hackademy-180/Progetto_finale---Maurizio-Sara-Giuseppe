@@ -17,7 +17,7 @@ Route::get('/category/{category}', [ArticleController::class, 'byCategory'])->na
 Route::get('/search/article', [PublicController::class, 'searchArticles'])->name('article.search');
 
 //Rotta revisore 
-Route::get('/revisor/index', [RevisorController::class, 'index'])->name('revisor.index');
+Route::get('/revisor/index', [RevisorController::class, 'index'])->middleware('isRevisor')->name('revisor.index');
 Route::patch('/accept/{article}', [RevisorController::class, 'accept'])->name('accept');
 Route::patch('/reject/{article}', [RevisorController::class, 'reject'])->name('reject');
 

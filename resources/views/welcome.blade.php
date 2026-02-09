@@ -1,4 +1,10 @@
 <x-layout>
+  @if (session()->has('errorMessage'))
+    <div class="alert alert-danger text-center shadow rounded w-50">
+      {{session('errorMessage')}}
+    </div>
+  @endif
+
     <header class="container mt-5">
         <section class="row">
             <article class="col-12">
