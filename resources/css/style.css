@@ -9,12 +9,12 @@ body{
     margin-top: 100px;
 }
 .nav-custom {
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09); */
     height: 80px;
     width: 100%;
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     position: fixed;
     top: 0;
     z-index: 99;
