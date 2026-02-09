@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\PublicController;
+use App\Http\Controllers\RevisorController;
 use App\Models\Article;
 use Illuminate\Support\Facades\Route;
 
@@ -15,4 +16,5 @@ Route::get('/category/{category}', [ArticleController::class, 'byCategory'])->na
 // Ricefca articoli
 Route::get('/search/article', [PublicController::class, 'searchArticles'])->name('article.search');
 
-
+//Rotta revisore 
+Route::get('/revisor/index', [RevisorController::class, 'index'])->name('revisor.index');

@@ -62,7 +62,7 @@
 
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
       © 2026 Copyright:
-      <a class="text-white" href="https://mdbootstrap.com/">Presto.com</a>
+      <a class="text-white" href="http://127.0.0.1:8000/">Presto.com</a>
     </div>
 
   </footer>
