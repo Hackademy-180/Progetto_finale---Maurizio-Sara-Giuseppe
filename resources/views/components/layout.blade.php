@@ -10,11 +10,25 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100" >
+    
     <x-navbar></x-navbar>
-{{$slot}}
+    
+    <main class="flex-grow-6">
+        <div class="container my-5">
+        {{$slot}}
+    </div> 
+  </main>
 
-        <x-footer/>
+  <footer>
+    
+    <div class="container p-4">
+      </footer>
+    <x-footer/>
+    </div>
+  
+   
+ 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     </body>

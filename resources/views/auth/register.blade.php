@@ -1,7 +1,11 @@
 <x-layout>
 
-
-    <form method="POST" action="{{route('register')}}">
+ 
+    <main class="container-fluid">
+        <section class="row justify-content-center align-items-center">
+            <article class="col-12 col-md-7">
+           <form method="POST" action="{{route('register')}}">
+            <h1 class=" text-center justify-content-center p-4">Registerazione</h1>
         @csrf
         <div class="mb-3">
             <label for="name" class="form-label">Nome utente</label>
@@ -21,5 +25,17 @@
         </div>                  
         <button type="submit" class="btn btn-primary">Registrati</button>
     </form>
+
+        </article>
+   
+    <article class="col-12 col-md-1">
+      <div class=" borderborder-end border-warning">
+    </div>
+    </article>
+        <article class="col-12 col-md-4">
+              <img src="{{ asset('media/immahine-registere-presto.jpg') }}" class="" alt="...">
+        </article>
+    </section>
+</main>
 
 </x-layout>

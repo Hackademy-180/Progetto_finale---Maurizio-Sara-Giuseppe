@@ -266,13 +266,30 @@ input:hover {
 
 
 
-.h-50{
+.h-50 {
     height: 50%;
 }
 
 
 /* Card Tutti gli annunci */
 
-.card-custom{
+.card-custom {
     min-height: 220px;
+}
+
+.footer {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+.main-footer {
+    flex: 4;
+}
+
+.border {
+    height: 50vh;
+    width: 1px;
 }
