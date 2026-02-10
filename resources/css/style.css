@@ -6,12 +6,12 @@
 }
 
 body {
-    margin-top: 100px;
+    margin-top: 134px;
 }
 
-.nav-custom {
-    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09); */
-    height: 80px;
+.navbar {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+    min-height: 80px;
     width: 100%;
     /* background-color: rgb(255, 255, 255);
     background-repeat: no-repeat;
@@ -84,81 +84,11 @@ input:hover {
     height: 1rem;
 }
 
-/* FINE barra di ricerca iportata */
-
-
-/* bottone navbar esterno */
-/* .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 9px 12px;
-    gap: 8px;
-    height: 40px;
-    width: 201px;
-    border: none;
-    background: var(--mattone);
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-.lable {
-    line-height: 22px;
-    font-size: 17px;
-    color:var(--mattone);
-    font-family: sans-serif;
-    letter-spacing: 1px;
-}
-
-.button:hover {
-    background: var(--mattone);
-}
-
-.button:hover .svg-icon {
-    animation: slope 1s linear infinite;
-}  */
-/* 
-@keyframes slope {
-    0% {}
-
-    50% {
-        transform: rotate(10deg);
-    }
-
-    100% {}
-} */
-
-/* Immagini carosell */
-
 .img-custom {
     width: 400px;
 }
 
-/* 
-
-
-/* Card homepage */
-
-
-
-/* Carosell */
-
-/* .img-custom{
-            height: 200px;
-            width: 200px;
-        }
-
-        .carousel-custom{
-            width: 200px;
-        } */
-
-/* * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        } */
-
-
+/* carosello */
 
 .card-list .card-item {
     list-style: none;
@@ -259,9 +189,11 @@ input:hover {
     align-items: center;
 }
 
-.swiper-button-next {
+.swiper-button-next,
+.swiper-button-prev {
     position: absolute;
     right: -100px;
+    color: red;
 }
 
 
@@ -292,4 +224,82 @@ input:hover {
 .border {
     height: 50vh;
     width: 1px;
+}
+
+/* card per categoria */
+
+.card-custom-1 {
+    min-height: 120px;
+}
+
+/* Button-anchor categoria */
+.btn-custom-1 {
+    text-decoration: none;
+    padding: 0px 18px;
+    border-radius: 10px;
+    border: 0;
+    background-color: darkgray;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    box-shadow: rgba(169, 169, 169, 0.555) 0px 10px 0px 0px;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+.btn-custom-1:hover {
+    box-shadow: rgba(169, 169, 169, 0.555) 0px 7px 0px 0px;
+}
+
+.btn-custom-1:active {
+    background-color: darkgray;
+    /*50, 168, 80*/
+    box-shadow: rgba(169, 169, 169, 0.555) 0px 0px 0px 0px;
+    transform: translateY(5px);
+    transition: 200ms;
+}
+
+/* Button-anchor dettaglio */
+.btn-custom {
+    padding: 0px 18px;
+    border-radius: 10px;
+    border: 0;
+    background-color: rgb(172, 34, 55);
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    box-shadow: rgb(122, 28, 42) 0px 10px 0px 0px;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+.btn-custom:hover {
+    box-shadow: rgb(172, 34, 55) 0px 7px 0px 0px;
+}
+
+.btn-custom:active {
+    background-color: rgb(172, 34, 55);
+    /*50, 168, 80*/
+    box-shadow: rgb(172, 34, 55) 0px 0px 0px 0px;
+    transform: translateY(5px);
+    transition: 200ms;
+}
+
+/* Tasti swiper */
+
+
+
+.swiper-custom {
+    width: 600px;
+    height: 540px;
+}
+
+.swiper-wrapper {
+    height: 600px;
+}
+
+/* Carosello */
+.carousel-custom {
+    width: 400px;
+    height: 400px;
 }

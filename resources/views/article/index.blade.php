@@ -1,5 +1,5 @@
 <x-layout>
-    <h1 class="lead display-2 text-center mt-5">Tutti gli annunci</h1>
+    <h1 class="lead display-2 text-center mt-5 header-custom">Tutti gli annunci</h1>
     <main class="container">
         <section class="row">
             @foreach ($articles as $article)
@@ -7,11 +7,11 @@
                 <span class="card card-custom m-2">
                     <span class="card-body d-flex flex-column justify-content-between">
                         <h5 class="card-title">{{$article->title}}</h5>
-                        <div>
-                            <p class="card-text ">{{$article->price}} €</p>
-                            <p class="card-text fw-medium">{{$article->category->name}}</p>
-                            <a href="{{route('byCategory', ["category" => $article->category])}}" class="btn btn-primary">Categoria</a>
-                            <a href="{{route("show_article", compact("article"))}}" class="btn btn-primary">Dettaglio</a>
+                        <h4 class="mb-4">{{$article->price}} €</h4>
+                        <div class="d-flex flex-column justify-content-between">
+                            <a href="{{route('byCategory', ["category" => $article->category])}}" class="btn-custom-1 btn btn-danger mx-1 mb-3">{{$article->category->name}}</a>
+                            <a href={{route("show_article", compact("article"))}} class="btn-custom btn btn-danger">Dettaglio</a>
+                            
                         </div>
                     </span>
                 </span>

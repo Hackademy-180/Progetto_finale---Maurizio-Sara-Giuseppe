@@ -9,7 +9,7 @@ use Livewire\Component;
 
 class ArticleForm extends Component
 {
-    #[Validate('required|min:5')]
+    #[Validate('required|min:5|max:24')]
     public $title;
 
     #[Validate('required|min:10|max:200')]
@@ -46,6 +46,7 @@ class ArticleForm extends Component
 
         'title.required' => 'Inserire un titolo!',
         'title.min' => 'Inserire almeno 5 caratteri per il titolo articolo.',
+        'title.max' => 'Inserire massimo 25 caratteri per il titolo articolo.',
 
         'description.required' => 'Inserire una descrizione!',
         'description.min' => 'Inserire almeno 10 caratteri.',
