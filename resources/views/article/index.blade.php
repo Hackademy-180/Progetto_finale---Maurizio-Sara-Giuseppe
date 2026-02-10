@@ -1,5 +1,5 @@
 <x-layout>
-    <h1 class="lead display-2 text-center mt-5">Tutti gli annunci</h1>
+    <h1 class="lead display-2 text-center mt-5 header-custom">Tutti gli annunci</h1>
     <main class="container">
         <section class="row">
             @foreach ($articles as $article)
