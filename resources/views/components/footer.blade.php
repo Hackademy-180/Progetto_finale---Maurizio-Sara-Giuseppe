@@ -19,7 +19,7 @@
               
               <div class="mt-4">
                 <!-- Facebook -->
-                <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-facebook-f"></i></a>
+                <a type="button" class="btn btn-floating btn-warning btn-lg "><i class="fab fa-facebook-f"></i></a>
                 <!-- Twitter -->
                 <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-twitter"></i></a>
                 <!-- Google + -->
