@@ -9,9 +9,9 @@ body {
     margin-top: 100px;
 }
 
-.nav-custom {
-    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09); */
-    height: 80px;
+.navbar {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+    min-height: 80px;
     width: 100%;
     /* background-color: rgb(255, 255, 255);
     background-repeat: no-repeat;

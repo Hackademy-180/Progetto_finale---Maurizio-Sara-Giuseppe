@@ -4,7 +4,7 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse bg-light" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
             
             <ul class="navbar-nav mx-auto mb-4 mb-lg-0">
                 
@@ -60,7 +60,6 @@
                     </button>
                 </a>
             </div>
-            
             @else
             
             
@@ -77,8 +76,6 @@
             @endauth
         </ul>    
         
-        
-        
         <div class=" nav-item mb-4">
             <ul class=" nav-item navbar-nav mx-auto mt-4 me-3">
                 <!-- sezione ordini e resi -->
@@ -87,13 +84,12 @@
                 </li>
                 <!-- consigli per la vendita -->
                 <li class="nav-item nav-elements">
-                    <a class="nav-link pt-0 testolink2" href="#">consigli per la vendita</a>
+                    <a class="nav-link pt-0 testolink2" href="https://info.subito.it/per-i-privati.htm">consigli per la vendita</a>
                 </li>
                 <!-- assistenza -->
                 <li class="nav-item nav-elements">
-                    <a class="nav-link pt-0 testolink2" href="#">assistenza</a>
+                    <a class="nav-link pt-0 testolink2" href="https://assistenza.subito.it/hc/it">assistenza</a>
                 </li>
-                
             </ul>
             
             
