@@ -34,7 +34,7 @@
     </div>
     </article>
         <article class="col-12 col-md-4">
-              <img src="{{ asset('media/immahine-registere-presto.jpg') }}" class="" alt="...">
+              <img src="{{ asset('media/immagine-registere-presto.jpg') }}" class="" alt="...">
         </article>
     </section>
 </main>
