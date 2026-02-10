@@ -1,5 +1,5 @@
 <div class="card" >
-  <img src="https://picsum.photos/200" class="" alt="...">
+  <img src="https://picsum.photos/200"  alt="...">
   <div class="card-body">
     <h5 class="card-title">{{$article->title}}</h5>
     <div class="d-flex flex-column justify-content-between card-custom-1">
