@@ -88,7 +88,7 @@
                 </li>
                 <!-- assistenza -->
                 <li class="nav-item nav-elements">
-                    <a class="nav-link pt-0 testolink2" href="#">assistenza</a>
+                    <a class="nav-link pt-0 testolink2" href="https://assistenza.subito.it/hc/it">assistenza</a>
                 </li>
             </ul>
             
