@@ -13,21 +13,21 @@
 
 </head>
 <body class="d-flex flex-column min-vh-100" >
-    
-    <x-navbar></x-navbar>
-    
-    <main class="flex-grow-6">
-        <div class="container my-5">
-        {{$slot}}
+  
+  <x-navbar></x-navbar>
+  
+  <main class="flex-grow-6">
+    <div class="container my-5">
+      {{$slot}}
     </div> 
   </main>
-
+  
   <footer>
     
     <div class="container p-4">
-      </footer>
+    </footer>
     <x-footer/>
-    </div>
+  </div>
   
    
  
