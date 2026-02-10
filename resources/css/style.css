@@ -84,81 +84,11 @@ input:hover {
     height: 1rem;
 }
 
-/* FINE barra di ricerca iportata */
-
-
-/* bottone navbar esterno */
-/* .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 9px 12px;
-    gap: 8px;
-    height: 40px;
-    width: 201px;
-    border: none;
-    background: var(--mattone);
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-.lable {
-    line-height: 22px;
-    font-size: 17px;
-    color:var(--mattone);
-    font-family: sans-serif;
-    letter-spacing: 1px;
-}
-
-.button:hover {
-    background: var(--mattone);
-}
-
-.button:hover .svg-icon {
-    animation: slope 1s linear infinite;
-}  */
-/* 
-@keyframes slope {
-    0% {}
-
-    50% {
-        transform: rotate(10deg);
-    }
-
-    100% {}
-} */
-
-/* Immagini carosell */
-
 .img-custom {
     width: 400px;
 }
 
-/* 
-
-
-/* Card homepage */
-
-
-
-/* Carosell */
-
-/* .img-custom{
-            height: 200px;
-            width: 200px;
-        }
-
-        .carousel-custom{
-            width: 200px;
-        } */
-
-/* * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        } */
-
-
+/* carosello */
 
 .card-list .card-item {
     list-style: none;
@@ -275,4 +205,10 @@ input:hover {
 
 .card-custom{
     min-height: 220px;
+}
+
+/* card per categoria */
+
+.card-custom-1{
+    min-height: 150px;
 }
