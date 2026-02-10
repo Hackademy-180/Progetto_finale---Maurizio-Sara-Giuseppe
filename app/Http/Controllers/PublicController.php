@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\SearchRequest;
 use App\Models\Article;
 use Illuminate\Http\Request;
 
@@ -12,10 +13,10 @@ class PublicController extends Controller
     return view('welcome', compact('articles'));
     }
 
-    public function searchArticles(Request $request){
+    public function searchArticles(SearchRequest $request){
         
         $query = $request->input('query');
-        $articles = Article::search($query)->paginate(10);
+        $articles = Article::search($query)->where("is_accepted", true)->paginate(10);
         return view('article.searched', ['articles' => $articles, 'query' => $query]);
     }
 }
