@@ -12,18 +12,23 @@
   @endif
   
   <header class="container mt-5" >
-    <section class="row">
-      <article class="col-12">
-        <form class="d-flex ms-auto" role="search" action="{{route('article.search')}}" method="GET">
-                <div class="input-group">
-                    <input type="search" name="query" class="form-control" placeholder="Cerca" aria-label="search">
-                    <button type="submit" class="input-group-text btn btn-outline-danger" id="basic-addon2">
-                        Cerca
-                    </button>
-                </div>
-            </form>
+    <section class="row d-flex justify-content-center align-items-center">
+      <article class="col-5 ">
+        <form class="d-flex ms-auto p-2" role="search" action="{{route('article.search')}}" method="GET">
+          <div class="input-group">
+            <input type="search" name="query" class="form-control" placeholder="Cerca" aria-label="search">
+            <button type="submit" class="input-group-text btn btn-outline-danger" id="basic-addon2">
+              Cerca
+            </button>
+          </div>
+        </form>
+        <h2 class="d-flex ms-auto p-2">Vendi presto con Presto.it!!</h2>
       </article>
+      <div class="col-6">
+        <img class="header-img" src="{{ asset('./media/header.jpg') }}" alt="header presto.it">
+      </div>
     </section>
+    
   </header>
   
   <section class="container mt-3">
