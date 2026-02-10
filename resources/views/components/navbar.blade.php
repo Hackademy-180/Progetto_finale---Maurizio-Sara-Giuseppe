@@ -40,7 +40,7 @@
                     <ul class="nav-item dropdown-menu">
                         @if (Auth::user()->is_revisor)
                         <li class="nav-item">
-                            <a class="nav-link"
+                            <a class="dropdown-item"
                             href="{{ route('revisor.index') }}">Zona revisore
                             <span class="postion-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{App\Models\Article::toBeRevisedCount()}}</span>
                         </a>
@@ -98,6 +98,8 @@
             
             
             {{-- BARRA DI RICEERCA USER STORY #10 --}}
+            @if (Route::currentRouteName() != 'home')
+                
             <form class="d-flex ms-auto" role="search" action="{{route('article.search')}}" method="GET">
                 <div class="input-group">
                     <input type="search" name="query" class="form-control" placeholder="Cerca" aria-label="search">
@@ -106,6 +108,7 @@
                     </button>
                 </div>
             </form>
+            @endif
             {{-- BARRA DI RICEERCA USER STORY #10 --}}
             
             <!-- INIZIO BARRA DI RICERCA IMPORTATA OPENSOURCE -->
