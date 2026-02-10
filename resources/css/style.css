@@ -1,3 +1,12 @@
+.h1 {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+
+
 :root {
     --mattone: rgb(188, 75, 81);
     --panna: rgb(242, 232, 207);
