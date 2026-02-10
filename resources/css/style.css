@@ -189,9 +189,10 @@ input:hover {
     align-items: center;
 }
 
-.swiper-button-next {
+.swiper-button-next, .swiper-button-prev {
     position: absolute;
     right: -100px;
+    color: red;
 }
 
 
@@ -210,5 +211,77 @@ input:hover {
 /* card per categoria */
 
 .card-custom-1{
-    min-height: 150px;
+    min-height: 120px;
 }
+
+/* Button-anchor categoria */
+.btn-custom-1 {
+  padding: 0px 18px;
+  border-radius: 10px;
+  border: 0;
+  background-color: darkgray;
+  letter-spacing: 1.5px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  box-shadow: rgba(169, 169, 169, 0.555) 0px 10px 0px 0px;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+.btn-custom-1:hover {
+  box-shadow: rgba(169, 169, 169, 0.555) 0px 7px 0px 0px;
+}
+
+.btn-custom-1:active {
+  background-color: darkgray;
+  /*50, 168, 80*/
+  box-shadow: rgba(169, 169, 169, 0.555) 0px 0px 0px 0px;
+  transform: translateY(5px);
+  transition: 200ms;
+}
+
+/* Button-anchor dettaglio */ 
+.btn-custom {
+  padding: 0px 18px;
+  border-radius: 10px;
+  border: 0;
+  background-color: rgb(255, 56, 86);
+  letter-spacing: 1.5px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  box-shadow: rgb(201, 46, 70) 0px 10px 0px 0px;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+.btn-custom:hover {
+  box-shadow: rgb(201, 46, 70) 0px 7px 0px 0px;
+}
+
+.btn-custom:active {
+  background-color: rgb(255, 56, 86);
+  /*50, 168, 80*/
+  box-shadow: rgb(201, 46, 70) 0px 0px 0px 0px;
+  transform: translateY(5px);
+  transition: 200ms;
+}
+
+/* Tasti swiper */
+
+
+
+.swiper-custom{
+    width: 600px;
+    height: 540px;
+}
+
+.swiper-wrapper{
+    height: 600px;
+}
+
+/* Carosello */
+.carousel-custom{
+    width: 400px;
+    height: 400px;
+}
+

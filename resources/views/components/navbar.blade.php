@@ -8,15 +8,15 @@
             
             <ul class="navbar-nav mx-auto mb-4 mb-lg-0">
                 
-                <li class="nav-item fw-bold nav-elements">
+                <li class="nav-item  nav-elements">
                     <a class="nav-link" href="{{route('home')}}">Home</a>
                 </li>
                 
-                <li class="nav-item fw-bold nav-elements">
+                <li class="nav-item  nav-elements">
                     <a class="nav-link" href="{{route("index_article")}}">Annunci</a>
                 </li>
                 
-                <li class="nav-item fw-bold nav-elements dropdown">
+                <li class="nav-item  nav-elements dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Categorie
                     </a>
@@ -31,7 +31,7 @@
                 
                 @auth
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle fw-bold nav-elements" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle nav-elements" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Benvenut* {{Auth::user()->name}}
                     </a>
                     
@@ -42,7 +42,7 @@
                         <li class="nav-item">
                             <a class="dropdown-item"
                             href="{{ route('revisor.index') }}">Zona revisore
-                            <span class="postion-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{App\Models\Article::toBeRevisedCount()}}</span>
+                            <span class="postion-absolute badge rounded-pill bg-danger">{{App\Models\Article::toBeRevisedCount()}}</span>
                         </a>
                         </li>
                         @endif
@@ -99,7 +99,7 @@
             <form class="d-flex ms-auto" role="search" action="{{route('article.search')}}" method="GET">
                 <div class="input-group">
                     <input type="search" name="query" class="form-control" placeholder="Cerca" aria-label="search">
-                    <button type="submit" class="input-group-text btn btn-outline-success" id="basic-addon2">
+                    <button type="submit" class="input-group-text btn btn-outline-danger" id="basic-addon2">
                         Cerca
                     </button>
                 </div>
