@@ -3,17 +3,21 @@
     <main class="container">
         <section class="row">
             @foreach ($articles as $article)
-                <span class="card m-2" style="width: 18rem;">
-                    <span class="card-body">
+            <article class="col-12 col-md-3 ">
+                <span class="card card-custom m-2">
+                    <span class="card-body d-flex flex-column justify-content-between">
                         <h5 class="card-title">{{$article->title}}</h5>
-                        <p class="card-text ">{{$article->price}} €</p>
-                        <p class="card-text fw-medium">{{$article->category->name}}</p>
-                        <a href="{{route('byCategory', ["category" => $article->category])}}" class="btn btn-primary">Categoria</a>
-                        <a href="{{route("show_article", compact("article"))}}" class="btn btn-primary">Dettaglio</a>
+                        <div>
+                            <p class="card-text ">{{$article->price}} €</p>
+                            <p class="card-text fw-medium">{{$article->category->name}}</p>
+                            <a href="{{route('byCategory', ["category" => $article->category])}}" class="btn btn-primary">Categoria</a>
+                            <a href="{{route("show_article", compact("article"))}}" class="btn btn-primary">Dettaglio</a>
+                        </div>
                     </span>
                 </span>
+            </article>
             @endforeach
         </x-layout>
-
-        </section>
-    </main>
+        
+    </section>
+</main>

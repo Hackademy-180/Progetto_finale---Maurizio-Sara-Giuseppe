@@ -135,9 +135,6 @@ body{
 
 /* Card homepage */
 
-.card-custom {
-    height: 450px;
-}
 
 
 /* Carosell */
@@ -157,13 +154,7 @@ body{
             box-sizing: border-box;
         } */
 
-        body-card {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            background: linear-gradient(rgb(236, 239, 254), rgb(206, 214, 251));
-        }
+
 
         .card-list .card-item {
             list-style: none;
@@ -251,3 +242,16 @@ body{
         }
 
 /* fine Carosell */
+
+
+
+.h-50{
+    height: 50%;
+}
+
+
+/* Card Tutti gli annunci */
+
+.card-custom{
+    min-height: 220px;
+}
