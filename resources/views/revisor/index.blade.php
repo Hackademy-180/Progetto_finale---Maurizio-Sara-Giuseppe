@@ -7,10 +7,10 @@
     @endif
 
     <div class="container-fluid pt-5">
-        <div class="row">
-            <div class="col-3">
+        <div class="row justify-content-center">
+            <div class="col-3 ">
                 <div class="rounded shadow bg-body-secondary">
-                    <h1 class="display-5 text-center pb-2">
+                    <h1 class="display-5 text-center p-2 py-4">
                         Dashboard per revisori
                     </h1>
                 </div>
@@ -34,7 +34,7 @@
                     <h1>{{$article_to_check->title }}</h1>
                     <h3>Autore: {{$article_to_check->user->name}} </h3>
                     <h4>{{$article_to_check->price }}€</h4>
-                    <h4 class="fst-italic text-muted">#{{$article_to_check->category->name }}</h4>
+                    <h4 class="fst-italic text-muted">{{$article_to_check->category->name }}</h4>
                     <p class="h6">{{$article_to_check->description }}</p>
                 </div>
                 <div class="d-flex pb-4 justify-content-around">
@@ -57,7 +57,7 @@
                 <h1 class="fst-italic display-4">
                     Nessun articolo da revisionare
                 </h1>
-                <a href="{{ route('home') }}" class="mt-5 btn btn-success"> Torna all'homepage</a>
+                <a href="{{ route('home') }}" class="mt-5 btn-custom btn btn-danger"> Torna all'homepage</a>
             </div>
         </div>
         @endif

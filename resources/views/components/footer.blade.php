@@ -19,11 +19,15 @@
               
               <div class="mt-4">
                 <!-- Facebook -->
+<<<<<<< HEAD
                 <a type="button" class="btn btn-floating btn-warning btn-lg "><i class="fab fa-facebook-f"></i></a>
+=======
+                <a type="button" class="btn-custom btn btn-danger btn-floating  btn-lg"><i class="fab fa-facebook-f"></i></a>
+>>>>>>> 187d4e658ef3127c4b6c1529a7dcd1c46d701bd6
                 <!-- Twitter -->
-                <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-twitter"></i></a>
+                <a type="button" class="btn-custom btn btn-danger btn-floating  btn-lg"><i class="fab fa-twitter"></i></a>
                 <!-- Google + -->
-                <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-google-plus-g"></i></a>
+                <a type="button" class="btn-custom btn btn-danger btn-floating  btn-lg"><i class="fab fa-google-plus-g"></i></a>
                 <!-- Linkedin -->
               </div>
             </div>
@@ -36,15 +40,15 @@
                   <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2"> Strada San Giorgio Martire 2/D, 70124 Bari (IT) </span>
                 </li>
                 <li class="mb-3">
-                  <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">Prestoclass@gmail.com</span>
+                  <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">prestoclass@gmail.com</span>
                 </li>
                 <li class="mb-3">
                   <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+0831 543 6454</span>
                 </li>
                 <li class="mb-3">
                   <div class="  mb-3 ">
-                    <h5>Vuoi diventare revisore? Clicca qui</h5>
-                    <a href="{{route('become.revisor')}}" class="btn btn-warning">Diventa revisore</a>
+                    <h5 class="lead">Vuoi diventare revisore? Clicca qui</h5>
+                    <a href="{{route('become.revisor')}}" class="btn-custom btn btn-danger">Diventa revisore</a>
                   </div>
                 </li>
               </ul>
@@ -65,7 +69,7 @@
           </div>
           
           
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        <div class="text-center p-3 mt-3" style="background-color: rgba(0, 0, 0, 0.2);">
       © 2026 Copyright:
       <a class="text-white" href="/">Presto.com</a>
     </div>
