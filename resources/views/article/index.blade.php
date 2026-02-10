@@ -9,8 +9,7 @@
                         <h5 class="card-title">{{$article->title}}</h5>
                         <div>
                             <p class="card-text ">{{$article->price}} €</p>
-                            <p class="card-text fw-medium">{{$article->category->name}}</p>
-                            <a href="{{route('byCategory', ["category" => $article->category])}}" class="btn btn-primary">Categoria</a>
+                            <a href="{{route('byCategory', ["category" => $article->category])}}" class="btn btn-primary">{{$article->category->name}}</a>
                             <a href="{{route("show_article", compact("article"))}}" class="btn btn-primary">Dettaglio</a>
                         </div>
                     </span>
