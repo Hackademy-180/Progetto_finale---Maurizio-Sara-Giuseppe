@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <title>Document</title>
+    <title>Presto.it</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
 </head>

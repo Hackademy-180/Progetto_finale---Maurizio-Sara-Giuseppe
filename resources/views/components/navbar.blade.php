@@ -81,15 +81,15 @@
             <ul class=" nav-item navbar-nav mx-auto mt-4 me-3">
                 <!-- sezione ordini e resi -->
                 <li class="nav-item nav-elements">
-                    <a class="nav-link pt-0 testolink2" href="#">ordini e resi</a>
+                    <a class="nav-link pt-0 testolink2" href="#">  Ordini e resi</a>
                 </li>
                 <!-- consigli per la vendita -->
                 <li class="nav-item nav-elements">
-                    <a class="nav-link pt-0 testolink2" href="https://info.subito.it/per-i-privati.htm">consigli per la vendita</a>
+                    <a class="nav-link pt-0 testolink2" href="https://info.subito.it/per-i-privati.htm">Consigli per la vendita</a>
                 </li>
                 <!-- assistenza -->
                 <li class="nav-item nav-elements">
-                    <a class="nav-link pt-0 testolink2" href="https://assistenza.subito.it/hc/it">assistenza</a>
+                    <a class="nav-link pt-0 testolink2" href="https://assistenza.subito.it/hc/it">Assistenza</a>
                 </li>
             </ul>
             
