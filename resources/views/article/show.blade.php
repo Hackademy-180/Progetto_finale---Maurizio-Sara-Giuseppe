@@ -3,18 +3,18 @@
     <main class="container">
         <section class="row justify-content-center py-5">
             <div class="col-9 col-md-6 mb-3 carousel-custom">
+                
+                @if ($article->images->count() >0)
                 <div id="carouselExampleAutoplaying" class="carousel slide carousel-custom" data-bs-ride="carousel">
                     <div class="carousel-inner carousel-custom">
-                        <div class="carousel-item active">
-                            <img src="https://picsum.photos/400" class="d-block w-100" alt="...">
+                        @foreach ($article->images as $key => $image)    
+                        <div class="carousel-item @if ($loop->first) active @endif">
+                            <img src="{{Storage::url($image->path)}}" class="d-block w-100 rounded shadow" alt="Immagine {{$key +1 }} dell'articolo {{$article->title}}">
                         </div>
-                        <div class="carousel-item">
-                            <img src="https://picsum.photos/400" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://picsum.photos/400" class="d-block w-100" alt="...">
-                        </div>
+                        @endforeach    
+                        
                     </div>
+                    @if($article->images->count() > 1)
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
@@ -23,8 +23,11 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
+                    @endif
                 </div>
-                
+                @else
+                    <img src="https://picsum.photos/300" alt="Nessuna foto inserita dall'utente">
+                @endif
             </div>
             
             <article class="col-3 text-center d-flex flex-column align-items-center justify-content-center article-custom ms-5 p-3">
