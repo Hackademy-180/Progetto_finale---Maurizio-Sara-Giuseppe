@@ -22,7 +22,7 @@
             </button>
           </div>
         </form>
-        <h2 class="d-flex ms-auto p-2">Vendi presto con Presto.it!!</h2>
+        <h2 class="d-flex ms-auto p-2"> {{ __('ui.Vendi presto con Presto.it!!') }}</h2>
       </article>
       <div class="col-6">
         <img class="header-img" src="{{ asset('./media/header.jpg') }}" alt="header presto.it">
@@ -33,7 +33,7 @@
   
   <section class="container mt-3">
     <section class="row text-center">
-      <h2 class="lead display-4 mb-4">Articoli piu recenti</h2>
+      <h2 class="lead display-4 mb-4">{{ __('ui.Articoli piu recenti') }}</h2>
       
       
 

@@ -14,12 +14,12 @@
                 </li>
                 
                 <li class="nav-item  nav-elements">
-                    <a class="nav-link" href="{{route("index_article")}}">Annunci</a>
+                    <a class="nav-link" href="{{route("index_article")}}">{{ __('ui.Annunci') }}</a>
                 </li>
                 
                 <li class="nav-item  nav-elements dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Categorie
+                     {{ __('ui.Categorie') }}
                     </a>
                     <ul class="dropdown-menu">
                         @foreach ($categories as $category)
@@ -33,7 +33,7 @@
                 @auth
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle nav-elements" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Benvenut* {{Auth::user()->name}}
+                       {{ __('ui.Benvenut*') }} {{Auth::user()->name}}
                     </a>
                     
                     
@@ -42,7 +42,7 @@
                         @if (Auth::user()->is_revisor)
                         <li class="nav-item">
                             <a class="dropdown-item"
-                            href="{{ route('revisor.index') }}">Zona revisore
+                            href="{{ route('revisor.index') }}"> {{ __('ui.Zona revisore') }}
                             <span class="postion-absolute badge rounded-pill bg-danger">{{App\Models\Article::toBeRevisedCount()}}</span>
                         </a>
                         </li>
@@ -57,7 +57,7 @@
             <div class="nav-item">
                 <a href="{{route("create_article")}}">
                     <button class="btn btn-danger">
-                        <span class="lable">Inserisci annuncio</span>
+                        <span class="lable">o {{ __('ui.Inserisci annunci') }}</span>
                     </button>
                 </a>
             </div>
@@ -70,7 +70,7 @@
                 </a>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="{{route('login')}}">Login</a></li>
-                    <li><a class="dropdown-item" href="{{route('register')}}">Registrazione</a></li>
+                    <li><a class="dropdown-item" href="{{route('register')}}">{{ __('ui.Registrazione') }}</a></li>
                     
                 </ul>
             </li>
@@ -81,15 +81,20 @@
             <ul class=" nav-item navbar-nav mx-auto mt-4 me-3">
                 <!-- sezione ordini e resi -->
                 <li class="nav-item nav-elements">
-                    <a class="nav-link pt-0 testolink2" href="#">  Ordini e resi</a>
+                    <a class="nav-link pt-0 testolink2" href="#">  {{ __('ui.Ordini e resi') }}</a>
                 </li>
                 <!-- consigli per la vendita -->
                 <li class="nav-item nav-elements">
-                    <a class="nav-link pt-0 testolink2" href="https://info.subito.it/per-i-privati.htm">Consigli per la vendita</a>
+                    <a class="nav-link pt-0 testolink2" href="https://info.subito.it/per-i-privati.htm"> {{ __('ui.Consigli per la vendita') }}</a>
                 </li>
                 <!-- assistenza -->
                 <li class="nav-item nav-elements">
-                    <a class="nav-link pt-0 testolink2" href="https://assistenza.subito.it/hc/it">Assistenza</a>
+                    <a class="nav-link pt-0 testolink2" href="https://assistenza.subito.it/hc/it"> {{ __('ui.Assistenza') }}</a>
+                </li>
+                <li>
+                    <x-_locale lang="it"/>
+                    <x-_locale lang="uk"/>
+                    <x-_locale lang="es"/>
                 </li>
             </ul>
             
@@ -101,7 +106,7 @@
                 <div class="input-group">
                     <input type="search" name="query" class="form-control" placeholder="Cerca" aria-label="search">
                     <button type="submit" class="input-group-text btn btn-outline-danger" id="basic-addon2">
-                        Cerca
+                         {{ __('ui.cerca') }}
                     </button>
                 </div>
             </form>
