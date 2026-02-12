@@ -2,7 +2,7 @@
     <form wire:submit="save" class="bg-body-tertiary shadow rounded pt-3 px-5 pb-3">
         @csrf
         <div class="mb-3">
-            <label for="title" class="form-label">Titolo</label>
+            <label for="title" class="form-label"> {{ __('ui.Titolo:') }}</label>
             <input type="text" class="form-control @error('title') is-invalid @enderror" wire:model.blur="title" id="title">
             @error("title")
                 <div class="text-danger">
@@ -68,7 +68,7 @@
             </section>
         @endif
         <div class="d-flex justify-content-end">
-            <button type="submit" class="btn btn-dark">Crea</button>
+            <button type="submit" class="btn btn-dark"> {{ __('ui.cerca') }}</button>
         </div>
     </form>
 </div>
