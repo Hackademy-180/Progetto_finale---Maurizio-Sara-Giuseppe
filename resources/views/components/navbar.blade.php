@@ -24,7 +24,7 @@
                     <ul class="dropdown-menu">
                         @foreach ($categories as $category)
                         <li>
-                            <a class="dropdown-item text-capitalize" href="{{route('byCategory', ['category' => $category])}}">{{$category->name}}</a>
+                            <a class="dropdown-item text-capitalize" href="{{route('byCategory', ['category' => $category])}}">{{__("ui.$category->name")}}</a>
                         </li>
                         @endforeach
                     </ul>
@@ -57,7 +57,7 @@
             <div class="nav-item">
                 <a href="{{route("create_article")}}">
                     <button class="btn btn-danger">
-                        <span class="lable">o {{ __('ui.Inserisci annunci') }}</span>
+                        <span class="lable"> + {{ __('ui.Inserisci annuncio') }}</span>
                     </button>
                 </a>
             </div>
@@ -66,7 +66,7 @@
             
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Utente
+                    {{ __('ui.Utente') }}
                 </a>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="{{route('login')}}">Login</a></li>
@@ -91,11 +91,25 @@
                 <li class="nav-item nav-elements">
                     <a class="nav-link pt-0 testolink2" href="https://assistenza.subito.it/hc/it"> {{ __('ui.Assistenza') }}</a>
                 </li>
-                <li>
+                <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{ __('ui.Lingua') }}</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <x-_locale lang="it" class="dropdown-item"/>
+                            </li>
+                            <li>
+                                <x-_locale lang="uk" class="dropdown-item"/>
+                            </li>
+                            <li>
+                                <x-_locale lang="es" class="dropdown-item"/>
+                            </li>
+                        </ul>
+                </li>
+                {{-- <li>
                     <x-_locale lang="it"/>
                     <x-_locale lang="uk"/>
                     <x-_locale lang="es"/>
-                </li>
+                </li> --}}
             </ul>
             
             
@@ -104,7 +118,7 @@
                 
             <form class="d-flex ms-auto" role="search" action="{{route('article.search')}}" method="GET">
                 <div class="input-group">
-                    <input type="search" name="query" class="form-control" placeholder="Cerca" aria-label="search">
+                    <input type="search" name="query" class="form-control" placeholder="{{ __('ui.cerca') }}" aria-label="search">
                     <button type="submit" class="input-group-text btn btn-outline-danger" id="basic-addon2">
                          {{ __('ui.cerca') }}
                     </button>

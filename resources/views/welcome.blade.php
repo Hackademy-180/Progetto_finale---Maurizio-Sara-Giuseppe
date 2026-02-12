@@ -16,13 +16,13 @@
       <article class="col-5 ">
         <form class="d-flex ms-auto p-2" role="search" action="{{route('article.search')}}" method="GET">
           <div class="input-group">
-            <input type="search" name="query" class="form-control" placeholder="Cerca" aria-label="search">
+            <input type="search" name="query" class="form-control" placeholder=" {{ __('ui.cerca') }}" aria-label="search">
             <button type="submit" class="input-group-text btn btn-outline-danger" id="basic-addon2">
-              Cerca
+              {{ __('ui.cerca') }}
             </button>
           </div>
         </form>
-        <h2 class="d-flex ms-auto p-2"> {{ __('ui.Vendi presto con Presto.it!!') }}</h2>
+        <h2 class="d-flex ms-auto p-2">{{ __('ui.Vendi presto con Presto.it!!') }}</h2>
       </article>
       <div class="col-6">
         <img class="header-img" src="{{ asset('./media/header.jpg') }}" alt="header presto.it">

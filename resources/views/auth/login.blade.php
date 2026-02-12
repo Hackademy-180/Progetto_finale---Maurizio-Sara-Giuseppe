@@ -17,7 +17,7 @@
                     <input type="password" class="form-control" id="password" name="password">
                 </div>    
                 <button type="submit" class="btn-custom btn btn-danger ">Login</button>
-                <p class="mt-3">Non hai ancora  un account? Registrati da questo <a href="{{route('register')}}" class="btn-custom-2 btn btn-danger">link</a></p>
+                <p class="mt-3">{{ __('ui.Non hai ancora  un account? Registrati da questo') }} <a href="{{route('register')}}" class="btn-custom-2 btn btn-danger">link</a></p>
             </form>
         </article>
    

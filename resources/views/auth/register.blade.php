@@ -5,10 +5,10 @@
         <section class="row justify-content-center align-items-center">
             <article class="col-12 col-md-7">
            <form method="POST" action="{{route('register')}}">
-            <h1 class=" text-center justify-content-center p-4 lead display-1">Dettaglio</h1>
+            <h1 class=" text-center justify-content-center p-4 lead display-1">{{ __('ui.Registrati') }}</h1>
         @csrf
         <div class="mb-3">
-            <label for="name" class="form-label">Nome utente</label>
+            <label for="name" class="form-label">{{ __('ui.Nome utente') }}</label>
             <input type="name" class="form-control" id="name" aria-describedby="emailHelp" name="name">
         </div>
         <div class="mb-3">
@@ -20,11 +20,11 @@
             <input type="password" class="form-control" id="password" name="password">
         </div>
         <div class="mb-3">
-            <label for="password_confirmation" class="form-label">Conferma password</label>
+            <label for="password_confirmation" class="form-label">{{ __('ui.Conferma password') }}</label>
             <input type="password" class="form-control" id="password_confirmation" name="password_confirmation">
         </div>                  
-        <button type="submit" class="btn-custom btn btn-danger">c</button>
-        <p class="mt-3">Hai già un account? Accedi da questo <a href="{{route('login')}}" class="btn-custom-2 btn btn-danger">link</a></p>
+        <button type="submit" class="btn-custom btn btn-danger">{{ __('ui.Registrati') }}</button>
+        <p class="mt-3">{{ __('ui.Hai già un account? Accedi da questo') }} <a href="{{route('login')}}" class="btn-custom-2 btn btn-danger">link</a></p>
     </form>
 
         </article>
