@@ -17,10 +17,10 @@
             </div>
         </div>
         @if($article_to_check)
-            @if ($article_to_check->images->count())
+            @if ($article_to_check->images->count()>0)
                 @foreach ($article_to_check->images as $key=> $image)
                 <div class="col-6 col-md-4 mb-4">
-                    <img src="{{Storage::url($image->path)}}" class="img-fluid rounded shadow" alt="Immagine {{$key +1}} dell'articolo {{$article_to_check->title}}">
+                    <img src="{{ $image->getUrl(300, 300) }}" class="d-block w-100 rounded shadow" alt="Immagine {{ $key + 1 }} dell'articolo {{ $article_to_check->title }}">
                 </div>
                 @endforeach  
             @else     
