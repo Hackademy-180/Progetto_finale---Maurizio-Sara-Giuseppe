@@ -214,7 +214,14 @@ input:hover {
 
 .card-custom {
     min-height: 220px;
+    height: 497px;
 }
+
+.card-img-custom{
+    height: 317px;
+}
+
+/* Fine card tutti gli annunci */
 
 .footer {
     width: 400px;
@@ -296,23 +303,23 @@ input:hover {
     padding: 0px 18px;
     border-radius: 10px;
     border: 0;
-    background-color: rgb(172, 34, 55);
+    background-color: rgb(223, 15, 46);
     letter-spacing: 1.5px;
     font-size: 15px;
     transition: all 0.3s ease;
-    box-shadow: rgb(122, 28, 42) 0px 10px 0px 0px;
+    box-shadow: rgb(184, 22, 46) 0px 10px 0px 0px;
     color: hsl(0, 0%, 100%);
     cursor: pointer;
 }
 
 .btn-custom:hover {
-    box-shadow: rgb(172, 34, 55) 0px 7px 0px 0px;
+    box-shadow: rgb(223, 15, 46) 0px 7px 0px 0px;
 }
 
 .btn-custom:active {
-    background-color: rgb(172, 34, 55);
+    background-color: rgb(184, 22, 46);
     /*50, 168, 80*/
-    box-shadow: rgb(172, 34, 55) 0px 0px 0px 0px;
+    box-shadow: rgb(184, 22, 46) 0px 0px 0px 0px;
     transform: translateY(5px);
     transition: 200ms;
 }
@@ -352,3 +359,5 @@ input:hover {
     height: 200px;
     width: 200px;
 }
+
+/* navbar */

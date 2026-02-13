@@ -1,5 +1,5 @@
 <div class="card card-custom" >
-  <img src="{{$article->images->isNotEmpty() ? Storage::url($article->images->first()->path) : "https://picsum.photos/500"}}" class="card-img-top" alt="Iammagine dell'articolo {{$article->title}}">
+  <img src="{{$article->images->isNotEmpty() ? Storage::url($article->images->first()->path) : "https://picsum.photos/500"}}" class="card-img-top card-img-custom" alt="Iammagine dell'articolo {{$article->title}}">
   <div class="card-body ">
     <h5 class="card-title">{{$article->title}}</h5>
     <div class="d-flex flex-column justify-content-between">
