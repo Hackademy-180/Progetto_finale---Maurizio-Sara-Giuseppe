@@ -73,6 +73,20 @@
                     <li><a class="dropdown-item" href="{{route('register')}}">{{ __('ui.Registrazione') }}</a></li>
                     
                 </ul>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Bandierine</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <x-_locale lang="it" class="dropdown-item"/>
+                            </li>
+                            <li>
+                                <x-_locale lang="uk" class="dropdown-item"/>
+                            </li>
+                            <li>    
+                                <x-_locale lang="es" class="dropdown-item"/>
+                            </li>
+                        </ul>
+                    </li>
             </li>
             @endauth
         </ul>    
