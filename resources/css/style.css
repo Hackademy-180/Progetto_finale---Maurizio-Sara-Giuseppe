@@ -297,6 +297,11 @@ input:hover {
     transform: translateY(5px);
     transition: 200ms;
 }
+/* Card dettaglio */
+.detail-card{
+    height: 200px;
+    border: 2px solid red;
+}
 
 /* Button-anchor dettaglio */
 .btn-custom {

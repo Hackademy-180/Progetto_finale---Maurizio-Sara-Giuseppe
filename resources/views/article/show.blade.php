@@ -1,7 +1,7 @@
 <x-layout>
     <h1 class="lead display-3 text-center mt-5 p-5">{{ __('ui.Dettaglio annuncio') }}</h1>
     <main class="container">
-        <section class="row justify-content-center py-5">
+        <section class="row justify-content-center">
             <div class="col-9 col-md-6 mb-3 carousel-custom">
                 
                 @if ($article->images->count() >0)
@@ -26,16 +26,24 @@
                     @endif
                 </div>
                 @else
-                    <img src="https://picsum.photos/300" alt="Nessuna foto inserita dall'utente">
+                <img src="https://picsum.photos/300" alt="Nessuna foto inserita dall'utente">
                 @endif
             </div>
+
+            <div class="card detail-card" style="width: 18rem;">
+                <ul class="list-group list-group-flush text-center ">
+                    <li class="list-group-item"><div class="fw-bold text-danger">{{ __('ui.Titolo:') }}</div> <em>{{$article->title}}</em></li>
+                    <li class="list-group-item"><div class="fw-bold text-danger">{{ __('ui.Prezzo:') }}</div> <em>{{$article->price}}</em></li>
+                    <li class="list-group-item"><div class="fw-bold text-danger">{{ __('ui.Categoria:') }}</div> <em>{{$article->category->name}}</em></li>
+                </ul>
+            </div>
             
-            <article class="col-3 text-center d-flex flex-column align-items-center justify-content-center article-custom ms-5 p-3">
+            {{-- <article class="col-3 text-center d-flex flex-column align-items-center justify-content-center article-custom ms-5 p-3">
                 <div class="fw-bold text-danger">{{ __('ui.Titolo:') }}</div> <em>{{$article->title}}</em>
                 <div class="fw-bold text-danger">{{ __('ui.Prezzo:') }}</div> <em>{{$article->price}}</em>
                 <div class="fw-bold text-danger">{{ __('ui.Categoria:') }}</div> <em>{{$article->category->name}}</em>
                 
-            </article>
+            </article> --}}
         </section>
     </main>
 </x-layout>

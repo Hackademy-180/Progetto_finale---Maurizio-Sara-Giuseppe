@@ -97,7 +97,11 @@
                         <li><x-_locale lang="es" class="dropdown-item"/>Spagnolo</li>
                     </ul>
                 </li>
-
+                @auth
+                <li>
+                    <a href="{{route('create_article')}}" class="btn-custom btn btn-danger">Inserisci annuncio</a>
+                </li>
+                @endauth
             </ul>
 
                             {{-- BLOCCO DESTRO --}}
