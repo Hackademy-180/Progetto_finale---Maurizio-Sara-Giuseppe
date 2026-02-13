@@ -1,7 +1,7 @@
 <x-layout>
     <header class="container">
         <section class="row py-5 justify-content-center align-items-center text-center">
-            <h1 class="display-2 lead">Articoli di <span>{{$category->name}}</span></h1>
+            <h1 class="display-2 lead">{{ __('ui.Articoli di') }} <span>{{__("ui.$category->name")}}</span></h1>
         </section>
     </header>
 
@@ -16,7 +16,7 @@
                 </span>
             @empty
                 <span class="col-12 text-center">
-                    <h3>Non ci sono ancora articoli in questa categoria.</h3>
+                    <h3>{{ __('ui.DettaglioNon ci sono ancora articoli in questa categoria.') }}</h3>
                 </span>
           
                 

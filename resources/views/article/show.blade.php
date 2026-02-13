@@ -1,5 +1,5 @@
 <x-layout>
-    <h1 class="lead display-3 text-center mt-5 p-5">Dettaglio annuncio</h1>
+    <h1 class="lead display-3 text-center mt-5 p-5">{{ __('ui.Dettaglio annuncio') }}</h1>
     <main class="container">
         <section class="row justify-content-center py-5">
             <div class="col-9 col-md-6 mb-3 carousel-custom">
@@ -31,9 +31,9 @@
             </div>
             
             <article class="col-3 text-center d-flex flex-column align-items-center justify-content-center article-custom ms-5 p-3">
-                <div class="fw-bold text-danger">Titolo:</div> <em>{{$article->title}}</em>
-                <div class="fw-bold text-danger">Prezzo:</div> <em>{{$article->price}}</em>
-                <div class="fw-bold text-danger">Categoria:</div> <em>{{$article->category->name}}</em>
+                <div class="fw-bold text-danger">{{ __('ui.Titolo:') }}</div> <em>{{$article->title}}</em>
+                <div class="fw-bold text-danger">{{ __('ui.Prezzo:') }}</div> <em>{{$article->price}}</em>
+                <div class="fw-bold text-danger">{{ __('ui.Categoria:') }}</div> <em>{{$article->category->name}}</em>
                 
             </article>
         </section>

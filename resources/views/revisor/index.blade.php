@@ -11,7 +11,7 @@
             <div class="col-3 ">
                 <div class="rounded shadow bg-body-secondary">
                     <h1 class="display-5 text-center p-2 py-4">
-                        Dashboard per revisori
+                        {{ __('ui.Dashboard per revisori') }}
                     </h1>
                 </div>
             </div>
@@ -44,12 +44,12 @@
                     <form action="{{route("reject", ["article"=>$article_to_check])}}" method="POST">
                         @csrf
                         @method("PATCH")
-                        <button class="btn btn-danger py-2 px-5 fw-bold ">Rifiuta</button>
+                        <button class="btn btn-danger py-2 px-5 fw-bold ">{{ __('ui.Rifiuta') }}</button>
                     </form>
                     <form action="{{route("accept", ["article"=>$article_to_check])}}" method="POST">
                         @csrf
                         @method("PATCH")
-                        <button class="btn btn-success py-2 px-5 fw-bold ">Accetta</button>
+                        <button class="btn btn-success py-2 px-5 fw-bold ">{{ __('ui.Accetta') }}</button>
                     </form>
                 </div>
             </div>
@@ -59,9 +59,9 @@
         <div class="row justify-content-center align-items-center height-custom text-center">
             <div class="col-12">
                 <h1 class="fst-italic display-4">
-                    Nessun articolo da revisionare
+                    {{ __('ui.Nessun articolo da revisionare') }}
                 </h1>
-                <a href="{{ route('home') }}" class="mt-5 btn-custom btn btn-danger"> Torna all'homepage</a>
+                <a href="{{ route('home') }}" class="mt-5 btn-custom btn btn-danger">{{ __("ui.Torna all’homepage") }}</a>
             </div>
         </div>
         @endif

@@ -1,5 +1,5 @@
 <x-layout>
-    <h1 class="lead display-2 text-center mt-5 header-custom">Tutti gli annunci</h1>
+    <h1 class="lead display-2 text-center mt-5 header-custom">{{ __('ui.Tutti gli annunci') }}</h1>
     <main class="container">
         <section class="row">
             @foreach ($articles as $article)
@@ -10,7 +10,7 @@
                         <h4 class="mb-4">{{$article->price}} €</h4>
                         <div class="d-flex flex-column justify-content-between">
                             <a href="{{route('byCategory', ["category" => $article->category])}}" class="btn-custom-1 btn btn-danger mx-1 mb-3">{{$article->category->name}}</a>
-                            <a href={{route("show_article", compact("article"))}} class="btn-custom btn btn-danger">Dettaglio</a>
+                            <a href={{route("show_article", compact("article"))}} class="btn-custom btn btn-danger">{{ __('ui.Dettaglio') }}</a>
                             
                         </div>
                     </span>
