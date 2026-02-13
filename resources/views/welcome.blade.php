@@ -11,21 +11,27 @@
   </div>
   @endif
   
-  <header class="container mt-5" >
-    <section class="row d-flex justify-content-center align-items-center">
-      <article class="col-5 ">
-        <form class="d-flex ms-auto p-2" role="search" action="{{route('article.search')}}" method="GET">
-          <div class="input-group">
-            <input type="search" name="query" class="form-control" placeholder=" {{ __('ui.cerca') }}" aria-label="search">
-            <button type="submit" class="input-group-text btn btn-outline-danger" id="basic-addon2">
-              {{ __('ui.cerca') }}
-            </button>
+  <header class="container" >
+    <section class="row">
+      <div class="header-img col-12 d-flex ">
+
+        {{-- <div class="header-img"> --}}
+          {{-- <img class="header-img" src="{{ asset('./media/header-linea-sottostante.png') }}" alt="header presto.it"> --}}
+          <div class="col-6"></div>
+          <div class="col-6">
+            <article class="">
+              <form class="d-flex ms-auto pt-5" role="search" action="{{route('article.search')}}" method="GET">
+                <div class="input-group">
+                  <input type="search" name="query" class="form-control" placeholder=" {{ __('ui.cerca') }}" aria-label="search">
+                  <button type="submit" class="input-group-text btn btn-outline-danger" id="basic-addon2">
+                    {{ __('ui.cerca') }}
+                  </button>
+                </div>
+              </form>
+              <h2 class="d-flex ms-auto pt-3 p-2">{{ __('ui.Vendi presto con Presto.it!!') }}</h2>
+            </article>
           </div>
-        </form>
-        <h2 class="d-flex ms-auto p-2">{{ __('ui.Vendi presto con Presto.it!!') }}</h2>
-      </article>
-      <div class="col-6">
-        <img class="header-img" src="{{ asset('./media/header.jpg') }}" alt="header presto.it">
+        {{-- </div> --}}
       </div>
     </section>
     
