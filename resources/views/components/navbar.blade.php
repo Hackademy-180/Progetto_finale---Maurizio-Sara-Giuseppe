@@ -105,11 +105,6 @@
                 <li class="nav-item nav-elements">
                     <a class="nav-link pt-0 testolink2" href="https://assistenza.subito.it/hc/it"> {{ __('ui.Assistenza') }}</a>
                 </li>
-                <li>
-                    <x-_locale lang="it"/>
-                    <x-_locale lang="uk"/>
-                    <x-_locale lang="es"/>
-                </li>
             </ul>
             
             
