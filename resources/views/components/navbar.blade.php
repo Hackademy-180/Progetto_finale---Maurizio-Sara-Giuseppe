@@ -3,7 +3,7 @@
 
         {{-- LOGO SINISTRA --}}
         <a class="navbar-brand" href="{{ route('home') }}">
-            <img src="{{ asset('media/presto nero.png') }}" class="logo-navbar" alt="logo presto">
+            <img src="{{ asset('media/logo.png') }}" class="logo-navbar" alt="logo presto">
         </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"

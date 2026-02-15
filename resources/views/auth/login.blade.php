@@ -26,7 +26,7 @@
     </div>
     </article>
         <article class="col-12 col-md-4">
-              <img src="{{ asset('media/immagine-progetto-finale-sito.jpg') }}" class="" alt="...">
+              <img src="{{ asset('media/login.png') }}" class="img-login" alt="busta con allinterno articoli in vendita">
         </article>
     </section>
 </main>
