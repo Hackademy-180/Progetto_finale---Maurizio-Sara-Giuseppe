@@ -43,3 +43,13 @@
 .img-login{
   height: 400px;
 }
+
+.crea-articolo-img{
+  
+     height: 100xp;
+     /* width: 10%; */
+     
+  background-image: url(../../public/media/vendita copia.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
