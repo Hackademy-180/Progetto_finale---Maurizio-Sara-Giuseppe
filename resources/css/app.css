@@ -1,7 +1,8 @@
+@import './style.css';
 @import 'bootstrap';
+@import 'bootstrap-icons';
 @import "@fortawesome/fontawesome-free/css/all.min.css";
 @import 'swiper/css';
 @import 'swiper/css/navigation';
 @import 'swiper/css/pagination';
-@import './style.css';
 @import './style-sara.css';
