@@ -141,10 +141,10 @@
                             <div class="input-group">
                                 <input type="search"
                                     name="query"
-                                    class="form-control"
+                                    class="form-control mb-2"
                                     placeholder="{{ __('ui.cerca') }}">
                                 <button type="submit"
-                                        class="btn btn-outline-danger">
+                                        class="btn btn-outline-danger mb-2">
                                     {{ __('ui.cerca') }}
                                 </button>
                             </div>
