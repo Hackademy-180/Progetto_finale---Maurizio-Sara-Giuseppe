@@ -69,27 +69,17 @@
    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
       
-      <script>
-        var swiper = new Swiper(".mySwiper", {
-          slidesPerView: 3,
-          centeredSlides: true,
-          spaceBetween: 30,
-          pagination: {
-            el: ".swiper-pagination",
-            type: "fraction",
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-        });
-        
-       
-       
-      
-        
-      </script>
-      
+      <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script> 
       
       
     </x-layout>

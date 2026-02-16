@@ -53,7 +53,7 @@
         </div>
         @if (!empty($images))
             <section class="row">
-                <div class="col-12">
+                <div class="col-12 p-3">
                     <p>Photo preview:</p>
                     <div class="row  rounded shadow py-4">
                         @foreach ($images as $key => $image)
