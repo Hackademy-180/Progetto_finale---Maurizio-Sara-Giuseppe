@@ -4,7 +4,7 @@
         <section class="row">
             @foreach ($articles as $article)
             <article class="col-12 col-md-3 ">
-                <span class="card card-custom m-2">
+                <span class="card m-2">
                     <span class="card-body d-flex flex-column justify-content-between">
                         <h5 class="card-title">{{$article->title}}</h5>
                         <h4 class="mb-4">{{$article->price}} €</h4>

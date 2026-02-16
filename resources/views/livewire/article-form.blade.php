@@ -68,7 +68,7 @@
             </section>
         @endif
         <div class="d-flex justify-content-end">
-            <button type="submit" class="btn btn-dark"> {{ __('ui.cerca') }}</button>
+            <button type="submit" class="btn btn-dark"> {{ __('ui.Crea articolo') }}</button>
         </div>
     </form>
 </div>

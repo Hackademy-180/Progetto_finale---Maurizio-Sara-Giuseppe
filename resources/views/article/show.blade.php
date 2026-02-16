@@ -26,16 +26,72 @@
                     @endif
                 </div>
                 @else
-                <img src="https://picsum.photos/300" alt="Nessuna foto inserita dall'utente">
+                <div class="card-1">
+                    <div class="card2 d-flex flex-column justify-content-center align-items-center text-center p-3">
+                        <img class="img-card-detail" src="https://picsum.photos/500" alt="Nessuna foto inserita dall'utente">
+                    </div>
+                </div>
                 @endif
             </div>
-
+            {{-- 
             <div class="card detail-card" style="width: 18rem;">
                 <ul class="list-group list-group-flush text-center ">
                     <li class="list-group-item"><div class="fw-bold text-danger">{{ __('ui.Titolo:') }}</div> <em>{{$article->title}}</em></li>
                     <li class="list-group-item"><div class="fw-bold text-danger">{{ __('ui.Prezzo:') }}</div> <em>{{$article->price}}</em></li>
                     <li class="list-group-item"><div class="fw-bold text-danger">{{ __('ui.Categoria:') }}</div> <em>{{$article->category->name}}</em></li>
                 </ul>
+            </div>  --}}
+            
+            {{-- <div class="card-1">
+                <ul class="list-group list-group-flush text-center h-100 d-flex flex-column justify-content-center">
+                    <li class="list-group-item bg-transparent border-0">
+                        <div class="fw-bold text-danger">{{ __('ui.Titolo:') }}</div>
+                        {{ $article->title }}
+                    </li>
+                    
+                    <li class="list-group-item bg-transparent border-0">
+                        <div class="fw-bold text-danger">{{ __('ui.Prezzo:') }}</div>
+                        {{ $article->price }} €
+                    </li>
+                    
+                    <li class="list-group-item bg-transparent border-0">
+                        <div class="fw-bold text-danger">{{ __('ui.Categoria:') }}</div>
+                        {{ $article->category->name }}
+                    </li>
+                </ul>
+            </div> --}}
+            
+            <div class="card-1">
+                <div class="card2 d-flex flex-column justify-content-center align-items-center text-center p-3">
+                    
+                    <div class="mb-3">
+                        <div class="fw-bold text-white small">
+                            {{ __('ui.Titolo:') }}
+                        </div>
+                        <div class="text-white">
+                            {{ $article->title }}
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <div class="fw-bold text-white small">
+                            {{ __('ui.Prezzo:') }}
+                        </div>
+                        <div class="text-white">
+                            {{ $article->price }} €
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="fw-bold text-white small">
+                            {{ __('ui.Categoria:') }}
+                        </div>
+                        <div class="text-white">
+                            {{ $article->category->name }}
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
             
             {{-- <article class="col-3 text-center d-flex flex-column align-items-center justify-content-center article-custom ms-5 p-3">

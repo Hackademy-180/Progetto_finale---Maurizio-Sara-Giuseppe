@@ -59,7 +59,7 @@ return
         'Videogiochi'=> 'Videojuegos',
         
         'Registrati'=> 'Registro',
-        'Lingua'=> 'Lengua',
+        'Lingua'=> 'Idioma',
 
 
     ];

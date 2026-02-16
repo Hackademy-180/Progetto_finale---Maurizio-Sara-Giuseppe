@@ -16,7 +16,7 @@
                 </span>
             @empty
                 <span class="col-12 text-center">
-                    <h3>{{ __('ui.DettaglioNon ci sono ancora articoli in questa categoria.') }}</h3>
+                    <h3>{{ __('ui.Non ci sono ancora articoli in questa categoria.') }}</h3>
                 </span>
           
                 
