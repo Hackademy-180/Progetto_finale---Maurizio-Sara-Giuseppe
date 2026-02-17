@@ -105,7 +105,7 @@ input:hover {
     user-select: 400px;
     display: block;
     background: rgba(240, 240, 240, 0.65);
-    padding: 18px;
+    padding: 0px;
     border-radius: 12px;
     text-decoration: none;
     border: 2px solid transparent;
@@ -164,7 +164,7 @@ input:hover {
 }
 
 .card-list .card-link .card-button {
-    height: 35px;
+    height: 0px;
     width: 35px;
     color: #5372f0;
     border-radius: 50%;
@@ -185,7 +185,7 @@ input:hover {
 /* fine Carosell */
 .swiper {
     width: 80%;
-    height: 550px;
+    height: 410px;
 
 }
 
@@ -255,7 +255,7 @@ input:hover {
     letter-spacing: 1.5px;
     font-size: 15px;
     transition: all 0.3s ease;
-    /* box-shadow: rgb(122, 28, 42) 0px 10px 0px 0px; */
+    box-shadow: rgb(122, 28, 42) 0px 10px 0px 0px;
     color: hsl(0, 0%, 100%);
     cursor: pointer;
 }
@@ -265,7 +265,7 @@ input:hover {
 .btn-custom-2:active {
     background-color: rgb(172, 34, 55);
     /*50, 168, 80*/
-    /* box-shadow: rgb(172, 34, 55) 0px 0px 0px 0px; */
+    box-shadow: rgb(172, 34, 55) 0px 0px 0px 0px;
     transform: translateY(5px);
     transition: 200ms;
 }
@@ -304,8 +304,9 @@ input:hover {
 }
 
 /* Button-anchor dettaglio */
-.btn-custom {
-    padding: 0px 18px;
+
+ .btn-custom {
+    padding: 0px 5px;
     border-radius: 10px;
     border: 0;
     background-color: rgb(223, 15, 46);
@@ -315,11 +316,12 @@ input:hover {
     box-shadow: rgb(184, 22, 46) 0px 10px 0px 0px;
     color: hsl(0, 0%, 100%);
     cursor: pointer;
+    text-decoration: none;
 }
 
 .btn-custom:hover {
-    box-shadow: rgb(223, 15, 46) 0px 10px 0px 0px;
-}
+    box-shadow: rgb(136, 7, 27) 0px 10px 0px 0px;
+} 
 
 .btn-custom:active {
     background-color: rgb(184, 22, 46);
@@ -329,7 +331,32 @@ input:hover {
     transition: 200ms;
 }
 
-/* Tasti swiper */
+
+.btn-extra {
+    padding: 5px 20px;
+    border-radius: 10px;
+    border: 0;
+    background-color: rgb(223, 15, 46);
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    box-shadow: rgb(184, 22, 46) 0px 10px 0px 0px;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-extra:hover {
+    box-shadow: rgb(136, 7, 27) 0px 10px 0px 0px;
+} 
+
+.btn-extra:active {
+    background-color: rgb(184, 22, 46);
+    /*50, 168, 80*/
+    box-shadow: rgb(184, 22, 46) 0px 0px 0px 0px;
+    transform: translateY(5px);
+    transition: 200ms;
+}
 
 
 
@@ -368,16 +395,16 @@ input:hover {
 /* Card pagina dettaglio */
 
 .card-1 {
-  width: 300px;
-  height: 300px;
-  background-image: linear-gradient(163deg, #ff0000 0%, #f9f9fc 100%);
-  border-radius: 20px;
+  width: 130px;
+  height: 40px;
+  background-image: linear-gradient(163deg, #ff2323 60%, #f9f9fc 100%);
+  border-radius: 10px;
   transition: all .3s;
   padding: 2px; /* crea l'effetto bordo */
 }
 
 .card2 {
-  width: 100%;
+  /* width: ; */
   height: 100%;
   background-color: rgba(255, 255, 255, 0.089);
   border-radius: 18px;

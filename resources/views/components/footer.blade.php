@@ -10,11 +10,11 @@
               <h5 class="text-uppercase mb-4">{{ __('ui.La nostra compagnia') }} </h5>
               
               <p>
-                {{ __("ui.si occupa del miglio rapporto qualita prezzo sul mercato con venditori controllati e spedizioni veloci") }}
+                {{ __("ui.Si occupa del miglio rapporto qualita prezzo sul mercato con venditori controllati e spedizioni veloci") }}
               </p>
               
               <p>
-                {{ __('ui.con uno sguardo sempre al green, nel riciclo e riuso di oggetti che altrimenti verrebbero butatati') }}
+                {{ __('ui.Con uno sguardo sempre al green, nel riciclo e riuso di oggetti che altrimenti verrebbero butatati') }}
               </p>
               
               <div class="mt-4">
@@ -44,7 +44,7 @@
                 <li class="mb-3">
                   <div class="  mb-3 ">
                     <h5 class="lead">{{ __('ui.Vuoi diventare revisore? Clicca qui') }}</h5>
-                    <a href="{{route('become.revisor')}}" class="btn-custom btn btn-danger">{{ __('ui.Diventa revisore') }}</a>
+                    <a href="{{route('become.revisor')}}" class="btn-custom btn-extra btn-danger">{{ __('ui.Diventa revisore') }}</a>
                   </div>
                 </li>
               </ul>
@@ -59,7 +59,7 @@
                 <label class="form-label" for="form5Example2">{{ __('ui.inserisci la tua email') }}</label>
               </div>
               
-              <button type="submit" class="btn btn-light btn-block">{{ __('ui.invio') }}</button>
+              <button type="submit" class="btn-custom btn-extra btn-danger">{{ __('ui.invio') }}</button>
             </div>
             
           </div>

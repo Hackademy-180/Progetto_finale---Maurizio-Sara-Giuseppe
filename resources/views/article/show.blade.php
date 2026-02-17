@@ -1,7 +1,7 @@
 <x-layout>
     <h1 class="lead display-3 text-center mt-5 p-5">{{ __('ui.Dettaglio annuncio') }}</h1>
     <main class="container">
-        <section class="row justify-content-center">
+        <section class="row d-flex">
             <div class="col-9 col-md-6 mb-3 carousel-custom">
                 
                 @if ($article->images->count() >0)
@@ -26,7 +26,7 @@
                     @endif
                 </div>
                 @else
-                <div class="card-1">
+                <div class="card-1 col-2">
                     <div class="card2 d-flex flex-column justify-content-center align-items-center text-center p-3">
                         <img class="img-card-detail" src="https://picsum.photos/500" alt="Nessuna foto inserita dall'utente">
                     </div>
@@ -61,37 +61,39 @@
                 </ul>
             </div> --}}
             
-            <div class="card-1">
-                <div class="card2 d-flex flex-column justify-content-center align-items-center text-center p-3">
-                    
+            <div class="col-6">
+                {{-- <div class="card2 d-flex flex-column justify-content-center align-items-center text-center p-3"> --}}
                     <div class="mb-3">
-                        <div class="fw-bold text-white small">
+                        <div class="fw-bold small">
                             {{ __('ui.Titolo:') }}
                         </div>
-                        <div class="text-white">
+                        <div >
                             {{ $article->title }}
                         </div>
                     </div>
                     
                     <div class="mb-3">
-                        <div class="fw-bold text-white small">
+                        <div class="fw-bold small">
                             {{ __('ui.Prezzo:') }}
                         </div>
-                        <div class="text-white">
+                        <div class=>
                             {{ $article->price }} €
                         </div>
                     </div>
                     
                     <div>
-                        <div class="fw-bold text-white small">
+                        <div class="fw-bold small">
                             {{ __('ui.Categoria:') }}
                         </div>
-                        <div class="text-white">
+                        <div >
                             {{ $article->category->name }}
                         </div>
                     </div>
-                    
-                </div>
+                    <div class="card-1 text-white d-frex p-1 mt-2 justify-content-center align-items-center">
+                        <div class="card2 p-1 align-items-center">
+                            <p class="px-2"><i class="fa-solid fa-cart-arrow-down fa-bounce"></i>  acquista</p>
+                        </div>
+                    </div>
             </div>
             
             {{-- <article class="col-3 text-center d-flex flex-column align-items-center justify-content-center article-custom ms-5 p-3">
