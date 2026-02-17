@@ -16,13 +16,13 @@
                     <label for="password" class="form-label">Password</label>
                     <input type="password" class="form-control" id="password" name="password">
                 </div>    
-                <button type="submit" class="btn-custom btn btn-danger ">Login</button>
-                <p class="mt-3">{{ __('ui.Non hai ancora  un account? Registrati da questo') }} <a href="{{route('register')}}" class="btn-custom-2 btn btn-danger">link</a></p>
+                <button type="submit" class="btn-custom-2 btn-login btn-danger ">Login</button>
+                <p class="mt-3">{{ __('ui.Non hai ancora  un account? Registrati da questo') }} <a href="{{route('register')}}" class="btn-custom-2  btn-danger">link</a></p>
             </form>
         </article>
    
     <article class="col-12 col-md-1">
-      <div class=" borderborder-end border-warning">
+      <div class=" border border-end border-warning">
     </div>
     </article>
         <article class="col-12 col-md-4">

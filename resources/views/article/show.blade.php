@@ -9,7 +9,7 @@
                         <a href="{{route('byCategory', ["category" => $article->category])}}" class="btn-custom-1 text-center btn-danger mx-1 mb-3">{{$article->category->name}}</a> --}}
                         {{-- <a href={{route("show_article", compact("article"))}} class="btn-custom text-center btn-danger card-button">{{ __('ui.Dettaglio') }}</a> --}}
                         {{-- <button class="card-button"><a href={{route("show_article", compact("article"))}} class="btn-custom text-center btn-danger card.button">{{ __('ui.Dettaglio') }}</a></button> --}}
-                        <div class="col-4">
+                        <div class="col-4 h-100 justify-content-center align-items-center d-flex">
                             
                             @if ($article->images->count() >0)
                                 <div id="carouselExampleAutoplaying" class="carousel slide carousel-custom" data-bs-ride="carousel">
@@ -34,8 +34,8 @@
                                 </div>
                             @else
                                 <div class="">
-                                    <div class="card2 d-flex flex-column justify-content-center align-items-center text-center p-3">
-                                        <img class="img-card-detail" src="https://picsum.photos/500" alt="Nessuna foto inserita dall'utente">
+                                    <div class="card2 d-flex flex-column justify-content-center align-items-center text-center h-100 rounded p-0 w-100">
+                                        <img class="img-card-detail rounded" src="https://picsum.photos/500" alt="Nessuna foto inserita dall'utente">
                                     </div>
                                 </div>
                             @endif

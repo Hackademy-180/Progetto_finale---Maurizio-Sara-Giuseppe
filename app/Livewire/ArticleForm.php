@@ -64,6 +64,8 @@ class ArticleForm extends Component
         }    
         session()->flash('success', 'Articolo creato correttamente');
         $this->cleanForm();
+
+        return redirect()->route('home');
     }
 
     public function render()
