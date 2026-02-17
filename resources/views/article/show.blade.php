@@ -1,8 +1,15 @@
 <x-layout>
     <h1 class="lead display-3 text-center mt-5 p-5">{{ __('ui.Dettaglio annuncio') }}</h1>
     <main class="container">
-        <section class="row d-flex">
-            <div class="col-9 col-md-6 mb-3 carousel-custom">
+        <section class="row ">
+            <div class="card-dettaglio mt-4 mb-3 ">
+                    <div class="card-details d-flex flex-row justify-content-around">
+                        {{-- <p class="text-title">{{$article->title}}</p>
+                        <p class="text-body">Prezzo: {{$article->price}} €</p>
+                        <a href="{{route('byCategory', ["category" => $article->category])}}" class="btn-custom-1 text-center btn-danger mx-1 mb-3">{{$article->category->name}}</a> --}}
+                        {{-- <a href={{route("show_article", compact("article"))}} class="btn-custom text-center btn-danger card-button">{{ __('ui.Dettaglio') }}</a> --}}
+                        {{-- <button class="card-button"><a href={{route("show_article", compact("article"))}} class="btn-custom text-center btn-danger card.button">{{ __('ui.Dettaglio') }}</a></button> --}}
+                        <div class="col-4">
                 
                 @if ($article->images->count() >0)
                 <div id="carouselExampleAutoplaying" class="carousel slide carousel-custom" data-bs-ride="carousel">
@@ -13,7 +20,6 @@
                         </div>
                         @endforeach    
                         
-                    </div>
                     @if($article->images->count() > 1)
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -25,60 +31,41 @@
                     </button>
                     @endif
                 </div>
+                                </div>
                 @else
-                <div class="card-1 col-2">
+                                <div class="">
                     <div class="card2 d-flex flex-column justify-content-center align-items-center text-center p-3">
                         <img class="img-card-detail" src="https://picsum.photos/500" alt="Nessuna foto inserita dall'utente">
                     </div>
                 </div>
                 @endif
             </div>
-            {{-- 
-            <div class="card detail-card" style="width: 18rem;">
-                <ul class="list-group list-group-flush text-center ">
-                    <li class="list-group-item"><div class="fw-bold text-danger">{{ __('ui.Titolo:') }}</div> <em>{{$article->title}}</em></li>
-                    <li class="list-group-item"><div class="fw-bold text-danger">{{ __('ui.Prezzo:') }}</div> <em>{{$article->price}}</em></li>
-                    <li class="list-group-item"><div class="fw-bold text-danger">{{ __('ui.Categoria:') }}</div> <em>{{$article->category->name}}</em></li>
-                </ul>
-            </div>  --}}
             
-            {{-- <div class="card-1">
-                <ul class="list-group list-group-flush text-center h-100 d-flex flex-column justify-content-center">
-                    <li class="list-group-item bg-transparent border-0">
-                        <div class="fw-bold text-danger">{{ __('ui.Titolo:') }}</div>
-                        {{ $article->title }}
-                    </li>
-                    
-                    <li class="list-group-item bg-transparent border-0">
-                        <div class="fw-bold text-danger">{{ __('ui.Prezzo:') }}</div>
-                        {{ $article->price }} €
-                    </li>
-                    
-                    <li class="list-group-item bg-transparent border-0">
-                        <div class="fw-bold text-danger">{{ __('ui.Categoria:') }}</div>
-                        {{ $article->category->name }}
-                    </li>
-                </ul>
-            </div> --}}
             
             <div class="col-6">
-                {{-- <div class="card2 d-flex flex-column justify-content-center align-items-center text-center p-3"> --}}
+                            <div class="card2 d-flex flex-column p-3">
+                                
                     <div class="mb-3">
-                        <div class="fw-bold small">
+                                    {{-- <div class="fw-bold small">
                             {{ __('ui.Titolo:') }}
-                        </div>
-                        <div >
+                                    </div> --}}
+                                    <h3>
                             {{ $article->title }}
+                                    </h3>
                         </div>
+                                <div class="mb-3">
+                                    <p>
+                                        {{ $article->description }} 
+                                    </p>
                     </div>
                     
                     <div class="mb-3">
-                        <div class="fw-bold small">
+                                    {{-- <div class="fw-bold small">
                             {{ __('ui.Prezzo:') }}
-                        </div>
-                        <div class=>
+                                    </div> --}}
+                                    <h2>
                             {{ $article->price }} €
-                        </div>
+                                    </h2>
                     </div>
                     
                     <div>
@@ -89,13 +76,17 @@
                             {{ $article->category->name }}
                         </div>
                     </div>
-                    <div class="card-1 text-white d-frex p-1 mt-2 justify-content-center align-items-center">
+                                <section class="d-flex justify-content-end mt-auto">
+                                    <div class="card-1 text-white p-1 mt-2">
                         <div class="card2 p-1 align-items-center">
                             <p class="px-2"><i class="fa-solid fa-cart-arrow-down fa-bounce me-3"></i>{{ __('ui.Acquista') }}</p>
                         </div>
                     </div>
+                                </section>
+                            </div>
+                        </div>
+                
             </div>
-            
             {{-- <article class="col-3 text-center d-flex flex-column align-items-center justify-content-center article-custom ms-5 p-3">
                 <div class="fw-bold text-danger">{{ __('ui.Titolo:') }}</div> <em>{{$article->title}}</em>
                 <div class="fw-bold text-danger">{{ __('ui.Prezzo:') }}</div> <em>{{$article->price}}</em>
