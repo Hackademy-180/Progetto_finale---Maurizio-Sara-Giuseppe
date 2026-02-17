@@ -60,4 +60,5 @@ return
         
         'Registrati'=> 'Register',
         'Lingua'=> 'Language',
+        'Acquista'=> 'Buy',
     ];

@@ -59,6 +59,7 @@ return
 
         'Registrati'=> 'Registrati',
         'Lingua'=> 'Lingua',
+        'Acquista'=> 'Acquista',
 
 
 
