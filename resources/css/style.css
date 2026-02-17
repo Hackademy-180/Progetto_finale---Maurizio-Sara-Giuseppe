@@ -210,16 +210,7 @@ input:hover {
 }
 
 
-/* Card Tutti gli annunci */
 
-.card-custom {
-    min-height: 220px;
-    height: 497px;
-}
-
-.card-img-custom{
-    height: 317px;
-}
 
 /* Fine card tutti gli annunci */
 
@@ -362,11 +353,24 @@ input:hover {
 
 .swiper-custom {
     width: 600px;
-    height: 540px;
+    height: 700px;
 }
 
 .swiper-wrapper {
-    height: 600px;
+    height: 700px;
+}
+.swiper-height{
+    height: 520px;
+}
+/* Card Tutti gli annunci */
+
+.card-custom {
+  
+    height: 300px;
+}
+
+.card-img-custom{
+    height: 300px;
 }
 
 /* Carosello */

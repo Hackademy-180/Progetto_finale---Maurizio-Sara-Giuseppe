@@ -39,7 +39,7 @@
   
   <section class="container mt-3">
     <section class="row text-center">
-      <h2 class="lead display-4 mb-4">{{ __('ui.Articoli piu recenti') }}</h2>
+      <h2 class="lead display-4 mb-4 mt-5">{{ __('ui.Articoli piu recenti') }}</h2>
       
       
 
@@ -47,8 +47,8 @@
       
       <div class="container">
         <section class="row">
-          <article class="col-12 position-relative ">
-            <div #swiperRef="" class="swiper mySwiper">
+          <article class="col-12 position-relative">
+            <div #swiperRef="" class="swiper mySwiper swiper-height">
               <div class="swiper-wrapper">
                   @foreach ($articles as $article)
                   <div class="swiper-slide swiper-custom">
