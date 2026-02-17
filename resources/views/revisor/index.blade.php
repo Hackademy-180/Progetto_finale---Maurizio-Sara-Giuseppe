@@ -79,13 +79,16 @@
             </div>
             @endforeach
             @else     
+            <section class="row d-flex flex-row">
             @for ($i=0; $i < 6; $i++)
-            <div class="col-6 col-md-4 mb-4 text-center">
-                <img src="https://picsum.photos/300"
-                class="img-fluid rounded shadow"
-                alt="immagine segnaposto">
-            </div>
-            @endfor
+
+                <div class="col-6 col-md-4 mb-4 text-center">
+                    <img src="https://picsum.photos/300"
+                    class="img-fluid rounded shadow"
+                    alt="immagine segnaposto">
+                </div>
+                @endfor
+            </section>
             @endif        
             <div class="col-md-4 ps-4 d-flex flex-column justify-content-between">
                 <div>
