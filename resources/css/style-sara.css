@@ -54,7 +54,8 @@
   background-size: cover;
 }
 
-.card__span {
+
+/* .card__span {
   cursor: pointer;
   font-size: 11px;
   position: absolute;
@@ -69,4 +70,4 @@
 
 .card__span:hover {
   transform: translateX(5px);
-}
+} */
