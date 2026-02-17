@@ -10,10 +10,9 @@
     <main class="container">
         <section class="row d-flex">
             <article class=" col-12 d-flex"> 
-                <div class="col-8">
+                <div class="col-12">
                     <livewire:article-form/>
                 </div>
-                <div class="crea-articolo-img col-6"></div>
             </article>
         </section>
     </main>

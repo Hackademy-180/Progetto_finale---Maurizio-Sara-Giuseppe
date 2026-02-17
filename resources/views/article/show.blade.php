@@ -91,7 +91,7 @@
                     </div>
                     <div class="card-1 text-white d-frex p-1 mt-2 justify-content-center align-items-center">
                         <div class="card2 p-1 align-items-center">
-                            <p class="px-2"><i class="fa-solid fa-cart-arrow-down fa-bounce"></i>  acquista</p>
+                            <p class="px-2"><i class="fa-solid fa-cart-arrow-down fa-bounce me-3"></i>{{ __('ui.Acquista') }}</p>
                         </div>
                     </div>
             </div>

@@ -60,6 +60,7 @@ return
         
         'Registrati'=> 'Registro',
         'Lingua'=> 'Idioma',
+        'Acquista'=> 'Comprar',
 
 
     ];
