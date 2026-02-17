@@ -105,7 +105,7 @@ input:hover {
     user-select: 400px;
     display: block;
     background: rgba(240, 240, 240, 0.65);
-    padding: 18px;
+    padding: 0px;
     border-radius: 12px;
     text-decoration: none;
     border: 2px solid transparent;
@@ -164,7 +164,7 @@ input:hover {
 }
 
 .card-list .card-link .card-button {
-    height: 35px;
+    height: 0px;
     width: 35px;
     color: #5372f0;
     border-radius: 50%;
@@ -185,7 +185,7 @@ input:hover {
 /* fine Carosell */
 .swiper {
     width: 80%;
-    height: 550px;
+    height: 410px;
 
 }
 
@@ -368,16 +368,16 @@ input:hover {
 /* Card pagina dettaglio */
 
 .card-1 {
-  width: 300px;
-  height: 300px;
-  background-image: linear-gradient(163deg, #ff0000 0%, #f9f9fc 100%);
-  border-radius: 20px;
+  width: 130px;
+  height: 40px;
+  background-image: linear-gradient(163deg, #ff2323 60%, #f9f9fc 100%);
+  border-radius: 10px;
   transition: all .3s;
   padding: 2px; /* crea l'effetto bordo */
 }
 
 .card2 {
-  width: 100%;
+  /* width: ; */
   height: 100%;
   background-color: rgba(255, 255, 255, 0.089);
   border-radius: 18px;
