@@ -99,7 +99,7 @@
                 </li>
                 @auth
                 <li>
-                    <a href="{{route('create_article')}}" class="btn-custom btn btn-danger">Inserisci annuncio</a>
+                    <a href="{{route('create_article')}}" class="btn-custom btn-extra btn-danger">Inserisci annuncio</a>
                 </li>
                 @endauth
             </ul>
