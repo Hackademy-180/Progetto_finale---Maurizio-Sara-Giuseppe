@@ -60,8 +60,8 @@
               <div class="swiper-pagination"></div>
             </div>
             
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev text-danger"></div>
+            <div class="swiper-button-next text-danger"></div>
           </article>
         </section>
       </div>
