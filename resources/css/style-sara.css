@@ -27,35 +27,40 @@
   .navbar-collapse {
     margin-top: 0;
   }
+
+ 
 }
 
-.header-img{
-  /* width: 100%; */
-  height: 340px;
-  background-image: url(../../public/media/header-presto.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* position: center; */
-  /* top: 10vh; */
-  /* z-index: 99; */
+.header-img {
+    height: 340px;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media (min-width:700px) {
+   .header-img {
+    background-image: url(../../public/media/header-presto.jpg); 
+    }
 }
 
 .img-login{
   height: 400px;
 }
 
-.crea-articolo-img{
+/* .crea-articolo-img{
   
      height: 300px;
-     /* width: 10%; */
+     width: 10%;
      
-  background-image: url(../../public/media/vendita copia.jpg);
+  background-image: url(../../public/media/vendita copia.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
 
-/* .card__span {
+.card__span {
   cursor: pointer;
   font-size: 11px;
   position: absolute;
@@ -70,4 +75,4 @@
 
 .card__span:hover {
   transform: translateX(5px);
-} */
+}

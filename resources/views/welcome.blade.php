@@ -11,31 +11,34 @@
   </div>
   @endif
   
-  <header class="container" >
-    <section class="row">
-      <div class="header-img col-12 d-flex ">
+  <header class="container-fluid px-0">
+  <section class="header-img row g-0">
+    {{-- <div class=" d-none d-md-block col-12 d-flex"> --}}
+      <div class=" col-md-6 d-none d-md-block"></div>
+      {{-- Su mobile sparisce, su desktop occupa metà --}}
+      <div class=" col-12 d-md-none col-md-6 d-block"><img class="img-fluid" src="{{ asset('/media/header-sinistra.png') }}" alt=""></div>
 
-        {{-- <div class="header-img"> --}}
-          {{-- <img class="header-img" src="{{ asset('./media/header-linea-sottostante.png') }}" alt="header presto.it"> --}}
-          <div class="col-6"></div>
-          <div class="col-6">
-            <article class="">
-              <form class="d-flex ms-auto pt-5" role="search" action="{{route('article.search')}}" method="GET">
-                <div class="input-group">
-                  <input type="search" name="query" class="form-control" placeholder=" {{ __('ui.cerca') }}" aria-label="search">
-                  <button type="submit" class="input-group-text btn btn-outline-danger" id="basic-addon2">
-                    {{ __('ui.cerca') }}
-                  </button>
-                </div>
-              </form>
-              <h2 class="d-flex ms-auto pt-3 p-2">{{ __('ui.Vendi presto con Presto.it!!') }}</h2>
-            </article>
+
+      {{-- Su mobile piena larghezza, su desktop metà --}}
+      <div class=" col-12 col-md-6 d-flex flex-column p-3">
+
+        <form class="d-flex w-100" role="search" 
+              action="{{route('article.search')}}" method="GET">
+          <div class="input-group">
+            <input type="search" name="query" class="form-control" placeholder=" {{ __('ui.cerca') }}" aria-label="search">
+            <button type="submit" class="input-group-text btn btn-outline-danger">{{ __('ui.cerca') }}</button>
           </div>
-        {{-- </div> --}}
+        </form>
+
+        <h2 class="pt-2 fs-4 fs-md-2">
+          {{ __('ui.Vendi presto con Presto.it!!') }}
+        </h2>
+
       </div>
-    </section>
-    
-  </header>
+
+    {{-- </div> --}}
+  </section>
+</header>
   
   <section class="container mt-3">
     <section class="row text-center">
