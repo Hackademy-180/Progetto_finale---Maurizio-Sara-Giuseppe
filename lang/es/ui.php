@@ -19,7 +19,7 @@ return
         'Vuoi diventare revisore? Clicca qui' => '¿Quieres convertirte en revisor? Haz clic aquí',
         'Diventa revisore' => 'Conviértete en revisor',
         'per problemi col venditore contattaci' => 'Para problemas con el vendedor, contáctanos',
-        'inserisci la tua email' => 'Introduce tu correo electrónico',
+        'Inserisci la tua email' => 'Introduce tu correo electrónico',
         'invio' => 'Enviar',
         'Dettaglio' => 'Detalle',
         'Nome utente' => 'Nombre de usuario',

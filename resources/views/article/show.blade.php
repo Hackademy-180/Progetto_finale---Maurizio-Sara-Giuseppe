@@ -33,36 +33,10 @@
                 </div>
                 @endif
             </div>
-            {{-- 
-            <div class="card detail-card" style="width: 18rem;">
-                <ul class="list-group list-group-flush text-center ">
-                    <li class="list-group-item"><div class="fw-bold text-danger">{{ __('ui.Titolo:') }}</div> <em>{{$article->title}}</em></li>
-                    <li class="list-group-item"><div class="fw-bold text-danger">{{ __('ui.Prezzo:') }}</div> <em>{{$article->price}}</em></li>
-                    <li class="list-group-item"><div class="fw-bold text-danger">{{ __('ui.Categoria:') }}</div> <em>{{$article->category->name}}</em></li>
-                </ul>
-            </div>  --}}
             
-            {{-- <div class="card-1">
-                <ul class="list-group list-group-flush text-center h-100 d-flex flex-column justify-content-center">
-                    <li class="list-group-item bg-transparent border-0">
-                        <div class="fw-bold text-danger">{{ __('ui.Titolo:') }}</div>
-                        {{ $article->title }}
-                    </li>
-                    
-                    <li class="list-group-item bg-transparent border-0">
-                        <div class="fw-bold text-danger">{{ __('ui.Prezzo:') }}</div>
-                        {{ $article->price }} €
-                    </li>
-                    
-                    <li class="list-group-item bg-transparent border-0">
-                        <div class="fw-bold text-danger">{{ __('ui.Categoria:') }}</div>
-                        {{ $article->category->name }}
-                    </li>
-                </ul>
-            </div> --}}
             
             <div class="col-6">
-                {{-- <div class="card2 d-flex flex-column justify-content-center align-items-center text-center p-3"> --}}
+                
                     <div class="mb-3">
                         <div class="fw-bold small">
                             {{ __('ui.Titolo:') }}
@@ -96,12 +70,7 @@
                     </div>
             </div>
             
-            {{-- <article class="col-3 text-center d-flex flex-column align-items-center justify-content-center article-custom ms-5 p-3">
-                <div class="fw-bold text-danger">{{ __('ui.Titolo:') }}</div> <em>{{$article->title}}</em>
-                <div class="fw-bold text-danger">{{ __('ui.Prezzo:') }}</div> <em>{{$article->price}}</em>
-                <div class="fw-bold text-danger">{{ __('ui.Categoria:') }}</div> <em>{{$article->category->name}}</em>
-                
-            </article> --}}
+        
         </section>
     </main>
 </x-layout>

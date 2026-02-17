@@ -18,7 +18,7 @@ return
         'Vuoi diventare revisore? Clicca qui' => 'Vuoi diventare revisore? Clicca qui',
         'Diventa revisore' => 'Diventa revisore',
         'per problemi col venditore contattaci' =>  'per problemi col venditore contattaci',
-        'inserisci la tua email' =>   'inserisci la tua email',
+        'Inserisci la tua email' =>   'Inserisci la tua email',
         'invio' => 'invio',
         'Dettaglio' =>'Dettaglio',
         'Nome utente' => 'Nome utente',
