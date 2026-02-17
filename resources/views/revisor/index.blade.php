@@ -1,14 +1,14 @@
 <x-layout>
     @if (session()->has('message'))
-    <div class="row justify-content-center">
-        <div class="col-12 alert alert-success text-center shadow rounded">
+    <div class="row justify-content-center ">
+        <div class="col-5 alert alert-success text-center shadow rounded">
             {{ session('message') }}
         </div>
         @endif
         
-        <div class="container-fluid  pt-5">
-            <div class="row justify-content-center">
-                <div class="col-12 p-5">
+        <div class=" justify-content-center pt-5">
+            <div class="row justify-content-center ">
+                <div class="col-12 p-3 ">
                     <div class="rounded shadow bg-body-secondary">
                         <h1 class="display-5 text-center p-2 py-4">
                             {{ __('ui.Dashboard per revisori') }}
@@ -18,16 +18,17 @@
             </div>
             @if($article_to_check)
             @if ($article_to_check->images->count()>0)
-            @foreach ($article_to_check->images as $key=>$image)
-            <div class="col-12">
-                <div class="card mb-3 ">
-                    <div class="row g-0 ">
+            <div class="row justify-content-center g-3">
+                @foreach ($article_to_check->images as $key => $image)
+                <div class="col-12 col-md-6 d-flex justify-content-center">
+                    <div class="card mb-3">
+                        <div class="row g-0">
                         <div class="col-md-4">
                             <img src="{{ $image->getUrl(300, 300) }}"
-                            class="img-fluid rounded-start" alt="Immagine {{ $key + 1 }} dell'articolo '{{ $article_to_check->title }}'"
-                            >
+                                class="img-fluid rounded-start"
+                                alt="Immagine {{ $key + 1 }} dell'articolo '{{ $article_to_check->title }}'">
                         </div>
-                        <div class="col-md-5 ps-3 ">
+                            <div class="col-md-5 ps-3">
                             <div class="card-body">
                                 <h5>Labels</h5>
                                 @if ($image->labels)
@@ -79,25 +80,13 @@
             </div>
             @endforeach
             @else     
-            <section class="row d-flex flex-row">
             @for ($i=0; $i < 6; $i++)
-<<<<<<< HEAD
-            <div class="col-12 col-md-4 mb-4 text-center">
-                <img src="https://picsum.photos/300"
-                class="img-fluid rounded shadow"
-                alt="immagine segnaposto">
-            </div>
-            @endfor
-=======
-
                 <div class="col-6 col-md-4 mb-4 text-center">
                     <img src="https://picsum.photos/300"
                     class="img-fluid rounded shadow"
                     alt="immagine segnaposto">
                 </div>
                 @endfor
-            </section>
->>>>>>> 09d200ceb45eb7165872a8c2b53ac5b2c4572c06
             @endif        
             <div class="col-md-4 ps-4 d-flex flex-column justify-content-between">
                 <div>
