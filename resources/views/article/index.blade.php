@@ -23,7 +23,7 @@
                             <a href={{route("show_article", compact("article"))}} class="btn-custom text-center btn-danger">{{ __('ui.Dettaglio') }}</a>
                             
                         </div>
-                    </span>
+                    </span> --}}
                 </span>
             </article>
             @endforeach
