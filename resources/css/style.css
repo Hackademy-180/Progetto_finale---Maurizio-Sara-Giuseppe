@@ -618,3 +618,9 @@ input:hover {
 
 
 /* navbar responsive */
+a:hover{
+   
+    border-radius: 10px;
+    
+}
+

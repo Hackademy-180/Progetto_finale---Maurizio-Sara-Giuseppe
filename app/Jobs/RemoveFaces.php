@@ -19,9 +19,7 @@ class RemoveFaces implements ShouldQueue
 {
     use Queueable;
 
-    /**
-     * Create a new job instance.
-     */
+
 
     private $article_image_id;
 
@@ -30,15 +28,10 @@ class RemoveFaces implements ShouldQueue
         $this->article_image_id = $article_image_id;
     }
 
-    /**
-     * Execute the job.
-     */
-    public function handle(): void
-    {
-        $i = Image::find($this->article_image_id);
-        if (!$i) {
-            return;
-        }
+
+  public function handle(): void{$i = Image::find($this->article_image_id);
+      if (!$i) {
+          return;}
 
         $src = storage_path('app/public/' . $i->path);
         $image = file_get_contents($src);
@@ -57,8 +50,7 @@ class RemoveFaces implements ShouldQueue
 
         $batchRequest = new BatchAnnotateImagesRequest();
         $batchRequest->setRequests([$request]);
-
-        $responseBatch = $googleVisionClient->batchAnnotateImages($batchRequest);
+$responseBatch = $googleVisionClient->batchAnnotateImages($batchRequest);
         $response = $responseBatch->getResponses()[0];
         $faces = $response->getFaceAnnotations();
 
