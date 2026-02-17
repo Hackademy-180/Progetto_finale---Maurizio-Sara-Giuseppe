@@ -10,78 +10,78 @@
                         {{-- <a href={{route("show_article", compact("article"))}} class="btn-custom text-center btn-danger card-button">{{ __('ui.Dettaglio') }}</a> --}}
                         {{-- <button class="card-button"><a href={{route("show_article", compact("article"))}} class="btn-custom text-center btn-danger card.button">{{ __('ui.Dettaglio') }}</a></button> --}}
                         <div class="col-4">
-                
-                @if ($article->images->count() >0)
-                <div id="carouselExampleAutoplaying" class="carousel slide carousel-custom" data-bs-ride="carousel">
-                    <div class="carousel-inner carousel-custom">
-                        @foreach ($article->images as $key => $image)    
-                        <div class="carousel-item @if ($loop->first) active @endif">
-                            <img src="{{$image ->getUrl(300, 300)}}" class="d-block w-100 rounded shadow" alt="Immagine {{$key +1 }} dell'articolo {{$article->title}}">
-                        </div>
-                        @endforeach    
-                        
-                    @if($article->images->count() > 1)
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                    @endif
-                </div>
+                            
+                            @if ($article->images->count() >0)
+                                <div id="carouselExampleAutoplaying" class="carousel slide carousel-custom" data-bs-ride="carousel">
+                                    <div class="carousel-inner carousel-custom">
+                                        @foreach ($article->images as $key => $image)    
+                                            <div class="carousel-item @if ($loop->first) active @endif">
+                                                <img src="{{$image ->getUrl(300, 300)}}" class="d-block w-100 rounded shadow" alt="Immagine {{$key +1 }} dell'articolo {{$article->title}}">
+                                            </div>
+                                        @endforeach    
+                                
+                                        @if($article->images->count() > 1)
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        @endif
+                                    </div>
                                 </div>
-                @else
+                            @else
                                 <div class="">
-                    <div class="card2 d-flex flex-column justify-content-center align-items-center text-center p-3">
-                        <img class="img-card-detail" src="https://picsum.photos/500" alt="Nessuna foto inserita dall'utente">
-                    </div>
-                </div>
-                @endif
-            </div>
+                                    <div class="card2 d-flex flex-column justify-content-center align-items-center text-center p-3">
+                                        <img class="img-card-detail" src="https://picsum.photos/500" alt="Nessuna foto inserita dall'utente">
+                                    </div>
+                                </div>
+                            @endif
+                        </div>
             
-            
-            <div class="col-6">
+                        
+                        <div class="col-6">
                             <div class="card2 d-flex flex-column p-3">
                                 
-                    <div class="mb-3">
+                                <div class="mb-3">
                                     {{-- <div class="fw-bold small">
-                            {{ __('ui.Titolo:') }}
+                                        {{ __('ui.Titolo:') }}
                                     </div> --}}
                                     <h3>
-                            {{ $article->title }}
+                                        {{ $article->title }}
                                     </h3>
-                        </div>
+                                </div>
                                 <div class="mb-3">
                                     <p>
                                         {{ $article->description }} 
                                     </p>
-                    </div>
-                    
-                    <div class="mb-3">
+                                </div>
+                                
+                                <div class="mb-3">
                                     {{-- <div class="fw-bold small">
-                            {{ __('ui.Prezzo:') }}
+                                        {{ __('ui.Prezzo:') }}
                                     </div> --}}
                                     <h2>
-                            {{ $article->price }} €
+                                        {{ $article->price }} €
                                     </h2>
-                    </div>
-                    
-                    <div>
-                        <div class="fw-bold small">
-                            {{ __('ui.Categoria:') }}
-                        </div>
-                        <div >
-                            {{ $article->category->name }}
-                        </div>
-                    </div>
+                                </div>
+                                
+                                <div>
+                                    <div class="fw-bold small">
+                                        {{ __('ui.Categoria:') }}
+                                    </div>
+                                    <div >
+                                        {{ $article->category->name }}
+                                    </div>
+                                </div>
                                 <section class="d-flex justify-content-end mt-auto">
                                     <div class="card-1 text-white p-1 mt-2">
-                        <div class="card2 p-1 align-items-center">
-                            <p class="px-2"><i class="fa-solid fa-cart-arrow-down fa-bounce me-3"></i>{{ __('ui.Acquista') }}</p>
-                        </div>
-                    </div>
+                                        <div class="card2 p-1 align-items-center">
+                                            <p class="px-2"><i class="fa-solid fa-cart-arrow-down fa-bounce me-3"></i>{{ __('ui.Acquista') }}</p>
+                                        </div>
+                                    </div>
                                 </section>
                             </div>
                         </div>
