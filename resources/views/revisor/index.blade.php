@@ -1,14 +1,14 @@
 <x-layout>
     @if (session()->has('message'))
     <div class="row justify-content-center">
-        <div class="col-5 alert alert-success text-center shadow rounded">
+        <div class="col-12 alert alert-success text-center shadow rounded">
             {{ session('message') }}
         </div>
         @endif
         
-        <div class="container-fluid pt-5">
+        <div class="container-fluid  pt-5">
             <div class="row justify-content-center">
-                <div class="col-3 ">
+                <div class="col-12 p-5">
                     <div class="rounded shadow bg-body-secondary">
                         <h1 class="display-5 text-center p-2 py-4">
                             {{ __('ui.Dashboard per revisori') }}
@@ -19,7 +19,7 @@
             @if($article_to_check)
             @if ($article_to_check->images->count()>0)
             @foreach ($article_to_check->images as $key=>$image)
-            <div class="col-6">
+            <div class="col-12">
                 <div class="card mb-3 ">
                     <div class="row g-0 ">
                         <div class="col-md-4">
@@ -80,7 +80,7 @@
             @endforeach
             @else     
             @for ($i=0; $i < 6; $i++)
-            <div class="col-6 col-md-4 mb-4 text-center">
+            <div class="col-12 col-md-4 mb-4 text-center">
                 <img src="https://picsum.photos/300"
                 class="img-fluid rounded shadow"
                 alt="immagine segnaposto">
