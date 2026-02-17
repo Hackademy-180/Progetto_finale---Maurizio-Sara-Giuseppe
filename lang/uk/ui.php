@@ -19,7 +19,7 @@ return
         'Vuoi diventare revisore? Clicca qui' => 'Do you want to become a reviewer? Click here',
         'Diventa revisore' => 'Become a reviewer',
         'per problemi col venditore contattaci' => 'For issues with the seller, contact us',
-        'inserisci la tua email' => 'Enter your email',
+        'Inserisci la tua email' => 'Enter your email',
         'invio' => 'Send',
         'Dettaglio' => 'Detail',
         'Nome utente' => 'Username',

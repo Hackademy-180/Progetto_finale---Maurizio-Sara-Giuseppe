@@ -39,7 +39,7 @@
   
   <section class="container mt-3">
     <section class="row text-center">
-      <h2 class="lead display-4 mb-4 mt-5">{{ __('ui.Articoli piu recenti') }}</h2>
+      <h2 class="lead display-4 mb-4">{{ __('ui.Articoli piu recenti') }}</h2>
       
       
 
@@ -74,12 +74,28 @@
       <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 3,
-      spaceBetween: 30,
+      slidesPerView: 1, // Mobile: 1 card
+      spaceBetween: 20,
+      loop: true,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
       },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      // Media Query via JavaScript (Breakpoints)
+      breakpoints: {
+        768: {
+          slidesPerView: 2, // Tablet: 2 card
+          spaceBetween: 25,
+        },
+        1024: {
+          slidesPerView: 3, // Desktop: 3 card
+          spaceBetween: 30,
+        }
+      }
     });
   </script> 
       

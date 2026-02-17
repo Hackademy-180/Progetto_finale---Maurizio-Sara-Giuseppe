@@ -54,9 +54,9 @@
             <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
               <h5 class="text-uppercase mb-4">{{ __('ui.per problemi col venditore contattaci') }}</h5>
               
-              <div class="form-outline form-white mb-4">
+              <div class="form-outline form-white mb-2">
                 <input type="email" id="form5Example2" class="form-control" />
-                <label class="form-label" for="form5Example2">{{ __('ui.inserisci la tua email') }}</label>
+                <label class="form-label" for="form5Example2">{{ __('ui.Inserisci la tua email') }}</label>
               </div>
               
               <button type="submit" class="btn-custom btn-extra btn-danger">{{ __('ui.invio') }}</button>
