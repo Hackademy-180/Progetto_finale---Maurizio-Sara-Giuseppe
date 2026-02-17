@@ -23,14 +23,14 @@
             <label for="password_confirmation" class="form-label">{{ __('ui.Conferma password') }}</label>
             <input type="password" class="form-control" id="password_confirmation" name="password_confirmation">
         </div>                  
-        <button type="submit" class="btn-custom btn btn-danger">{{ __('ui.Registrati') }}</button>
-        <p class="mt-3">{{ __('ui.Hai già un account? Accedi da questo') }} <a href="{{route('login')}}" class="btn-custom-2 btn btn-danger">link</a></p>
+        <button type="submit" class="btn-custom-2 btn-danger">{{ __('ui.Registrati') }}</button>
+        <p class="mt-3">{{ __('ui.Hai già un account? Accedi da questo') }} <a href="{{route('login')}}" class="btn-custom-2 btn-danger">link</a></p>
     </form>
 
         </article>
    
     <article class="col-12 col-md-1">
-      <div class=" borderborder-end border-warning">
+      <div class=" border border-end border-warning">
     </div>
     </article>
         <article class="col-12 col-md-4">
